@@ -1,0 +1,8 @@
+{
+	"id":"id",
+ 	"file_path":"data/train_data/imdb_train_data.py",
+ 	"encoding": "ISO-8859-1",
+ 	"seed":"seed",
+ 	"n_documents_in_set": 458712,
+ 	"n_documents_in_subset":10
+}
