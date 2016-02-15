@@ -1,7 +1,6 @@
-from preprocessing.training_dataset_handler import TrainingDatasetIterator
-
-import random
 from unittest import TestCase
+
+from dataset_handler.training_dataset_handler import TrainingDatasetIterator
 
 
 class TestTrainingDatasetIterator(TestCase):

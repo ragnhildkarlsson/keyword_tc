@@ -1,0 +1,5 @@
+{
+  "id":"id"
+  "directory_path":"path to main directory",
+  "encoding": "encoding of the files in the test set",
+}

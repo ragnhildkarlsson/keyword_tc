@@ -41,6 +41,7 @@ Index format
     "filters":["filter1","filter2",...]
     "index_format":"word"/"bigram"/"trigram"
     "index":{term:[(document_id, frequency)...] ...}
+    "n_terms": number of terms in index
 }
 
 """
@@ -68,7 +69,11 @@ def create_index(index_specification):
 
     #create index
     index["index"] = {}
+    n_indexed_files = 0
     for document_data in training_dataset_handler:
+        if n_indexed_files % 1000 == 0:
+            print(n_indexed_files)
+        n_indexed_files += 1
         document_id = document_data[0]
         document = document_data[1]
         document_terms = nltk.word_tokenize(document)
@@ -81,5 +86,7 @@ def create_index(index_specification):
                 index["index"][index_term] = []
             posting = (document_id, freq_dist[document_term])
             index["index"][index_term].append(posting)
+
+    index["n_terms"] = len(index["index"])
 
     return index

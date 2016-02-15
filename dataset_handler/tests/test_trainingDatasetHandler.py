@@ -1,4 +1,4 @@
-from preprocessing import TrainingDatasetHandler
+from preproces import TrainingDatasetHandler
 
 from unittest import TestCase
 

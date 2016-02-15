@@ -5,12 +5,10 @@ import re
 import specification_handler
 
 """
-This class is responsible for create iteration over the training dataset,
-
+This class is responsible for create easy access to a training dataset,
 """
 
 class TrainingDatasetHandler:
-
 
     SPECIFACATION_SUBDIRECTORY = "training_data"
     DATA_FOLDER = "data"
@@ -18,13 +16,15 @@ class TrainingDatasetHandler:
     def __init__(self, dataset_id):
         self.__dataset_id = dataset_id
         data_spec = specification_handler.get_specification(self.SPECIFACATION_SUBDIRECTORY, dataset_id)
-        self.data_path = data_spec['file_path']
+        self.file_path_all_data = data_spec['file_path']
         self.encoding = data_spec['encoding']
         self.n_documents_in_subset = data_spec['n_documents_in_subset']
         self.subset_indices = self.generate_subset_indices(data_spec['n_documents_in_set'],
                                                              self.n_documents_in_subset,
                                                              data_spec['seed'],
                                                              )
+        self.dataset_files_directory = data_spec["directory_path"]
+
     @property
     def dataset_id(self):
         return  self.__dataset_id
@@ -41,9 +41,19 @@ class TrainingDatasetHandler:
         s = set(l)
         return s
 
+    def get_training_data_file_lines(self, file_name):
+        file_path = os.path.join(self.dataset_files_directory,file_name)
+        with open(file_path,'r') as f:
+            lines = f.readlines()
+        return lines
+
+    def get_training_data_file_string(self,file_name):
+        lines = self.get_training_data_file_lines(file_name)
+        document = ' '.join(lines)
+        return document
 
     def __iter__(self):
-        return TrainingDatasetIterator(self.data_path,self.encoding, self.subset_indices)
+        return TrainingDatasetIterator(self.file_path_all_data, self.encoding, self.subset_indices)
 
 class TrainingDatasetIterator:
     """

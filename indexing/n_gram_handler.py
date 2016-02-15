@@ -1,5 +1,9 @@
 import nltk
 
+
+def string_to_index_term(words_string):
+    return words_string.replace(" ","_")
+
 def word_to_index_term(word):
     return word
 
@@ -17,7 +21,6 @@ def get_to_index_term_function(index_type):
     if not index_type in to_index_term_functions:
         raise NotImplemented("Not implemented index type: " + index_type)
     return to_index_term_functions[index_type]
-
 
 
 def get_word_freq_dist(document_terms):
