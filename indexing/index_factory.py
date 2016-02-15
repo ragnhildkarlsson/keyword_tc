@@ -1,6 +1,7 @@
 import nltk
-from preprocessing import n_gram_handler
-from preprocessing import TrainingDatasetHandler
+
+from indexing import n_gram_handler
+from dataset_handler.training_dataset_handler import TrainingDatasetHandler
 from preprocessing import preprocessing_filters
 
 
@@ -22,7 +23,12 @@ def get_index_id(index_specification):
     index_id = dataset_id + "_f_" + filters_id + "_it_" + str(__get_index_type_id(index_type))
     return index_id
 
-
+def __get_frequency_of_most_common_term(index):
+    max_freq = 0
+    for term in index:
+        if(len(index[term])>max_freq):
+            max_freq = len(index[term])
+    return max_freq
 
 """
 Returns a index matching the given specification
@@ -42,6 +48,7 @@ Index format
     "index_format":"word"/"bigram"/"trigram"
     "index":{term:[(document_id, frequency)...] ...}
     "n_terms": number of terms in index
+    "n_documents":"number of documents in index"
 }
 
 """
@@ -69,16 +76,13 @@ def create_index(index_specification):
 
     #create index
     index["index"] = {}
-    n_indexed_files = 0
+    n_documents = 0
     for document_data in training_dataset_handler:
-        if n_indexed_files % 1000 == 0:
-            print(n_indexed_files)
-        n_indexed_files += 1
+        n_documents +=1
         document_id = document_data[0]
         document = document_data[1]
         document_terms = nltk.word_tokenize(document)
-        for filter in filters:
-            document_terms = filter(document_terms)
+        document_terms = preprocessing_filters.apply_filters(document_terms,filters)
         freq_dist = to_freq_dist(document_terms)
         for document_term in freq_dist:
             index_term = to_index_term(document_term)
@@ -88,5 +92,7 @@ def create_index(index_specification):
             index["index"][index_term].append(posting)
 
     index["n_terms"] = len(index["index"])
+    index["n_documents"] = n_documents
+    index["max_frequency"] = __get_frequency_of_most_common_term(index["index"])
 
     return index

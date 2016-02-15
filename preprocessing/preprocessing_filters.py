@@ -36,3 +36,7 @@ def get_filter_id(filter_name):
     return(filters[filter_name])
 
 
+def apply_filters(terms, filters):
+    for filter in filters:
+        terms = filter(terms)
+    return terms

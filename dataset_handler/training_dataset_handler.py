@@ -2,6 +2,7 @@ import os
 import random
 import re
 
+import dataset_handler
 import specification_handler
 
 """
@@ -11,7 +12,6 @@ This class is responsible for create easy access to a training dataset,
 class TrainingDatasetHandler:
 
     SPECIFACATION_SUBDIRECTORY = "training_data"
-    DATA_FOLDER = "data"
 
     def __init__(self, dataset_id):
         self.__dataset_id = dataset_id
@@ -41,16 +41,9 @@ class TrainingDatasetHandler:
         s = set(l)
         return s
 
-    def get_training_data_file_lines(self, file_name):
-        file_path = os.path.join(self.dataset_files_directory,file_name)
-        with open(file_path,'r') as f:
-            lines = f.readlines()
-        return lines
-
     def get_training_data_file_string(self,file_name):
-        lines = self.get_training_data_file_lines(file_name)
-        document = ' '.join(lines)
-        return document
+        file_path = os.path.join(self.dataset_files_directory,file_name)
+        return dataset_handler.get_document_as_string(file_path, encoding=self.encoding)
 
     def __iter__(self):
         return TrainingDatasetIterator(self.file_path_all_data, self.encoding, self.subset_indices)

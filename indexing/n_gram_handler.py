@@ -1,4 +1,5 @@
 import nltk
+import re
 
 
 def string_to_index_term(words_string):
@@ -21,6 +22,28 @@ def get_to_index_term_function(index_type):
     if not index_type in to_index_term_functions:
         raise NotImplemented("Not implemented index type: " + index_type)
     return to_index_term_functions[index_type]
+
+
+def is_n_gram_term(term):
+    if "_" in term:
+        return  True
+    else:
+        return False
+
+def term_to_words(term):
+    return term.split("_")
+
+def is_n_gram_part_in_term(term, n_gram):
+    # possible matches
+    pattern_1  = "^"+n_gram + "_"
+    pattern_2 = "^"+n_gram + "$"
+    pattern_3 = "_"+ n_gram +"_"
+    pattern_4 = "_"+ n_gram +"$"
+    if re.search(pattern_1,term) or re.search(pattern_2,term) or re.search(pattern_3,term) or re.search(pattern_4,term) :
+        return  True
+    else:
+        return False
+
 
 
 def get_word_freq_dist(document_terms):
