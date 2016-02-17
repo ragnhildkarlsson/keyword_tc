@@ -1,4 +1,4 @@
-
+import nltk
 from nltk.corpus import stopwords
 
 __NLTK_ENGLISH_STOP_WORDS = set(stopwords.words('english'))
@@ -17,7 +17,7 @@ def filter_nltk_english_stopwords(terms):
 
 
 
-def get_filter(filter_name):
+def __get_filter(filter_name):
     filters = {'to_lowercase' : to_lowercase,
                'only_alpha' : only_aplha,
                'filter_nltk_english_stopwords':filter_nltk_english_stopwords
@@ -36,7 +36,9 @@ def get_filter_id(filter_name):
     return(filters[filter_name])
 
 
-def apply_filters(terms, filters):
+def apply_filters_to_document(document, filter_names):
+    filters = [__get_filter(filter_name) for filter_name in filter_names]
+    document_terms = nltk.word_tokenize(document)
     for filter in filters:
-        terms = filter(terms)
-    return terms
+        document_terms = filter(document_terms)
+    return document_terms

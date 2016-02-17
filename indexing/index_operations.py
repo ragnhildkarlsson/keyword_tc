@@ -1,5 +1,4 @@
 
-
 def get_merged_posting_lists(posting_list_1, posting_list_2):
     result =[]
     p1_index = 0

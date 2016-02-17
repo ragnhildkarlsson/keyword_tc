@@ -45,7 +45,7 @@ Index format
 {   "id": index_id
     "dataset_id: dataset_id,
     "filters":["filter1","filter2",...]
-    "index_format":"word"/"bigram"/"trigram"
+    "index_type":"word"/"bigram"/"trigram"
     "index":{term:[(document_id, frequency)...] ...}
     "n_terms": number of terms in index
     "n_documents":"number of documents in index"
@@ -68,9 +68,6 @@ def create_index(index_specification):
     # Create traing data handler and assign index help methods according to index type
 
     training_dataset_handler = TrainingDatasetHandler(dataset_id)
-
-    filters = [preprocessing_filters.get_filter(filter_name) for filter_name in filter_names]
-
     to_index_term = n_gram_handler.get_to_index_term_function(index_type)
     to_freq_dist = n_gram_handler.get_to_freq_dist_function(index_type)
 
@@ -81,8 +78,7 @@ def create_index(index_specification):
         n_documents +=1
         document_id = document_data[0]
         document = document_data[1]
-        document_terms = nltk.word_tokenize(document)
-        document_terms = preprocessing_filters.apply_filters(document_terms,filters)
+        document_terms = preprocessing_filters.apply_filters_to_document(document,filter_names)
         freq_dist = to_freq_dist(document_terms)
         for document_term in freq_dist:
             index_term = to_index_term(document_term)
