@@ -29,7 +29,6 @@ class TrainingDatasetHandler:
     def dataset_id(self):
         return  self.__dataset_id
 
-
     @staticmethod
     def generate_subset_indices(n_documents_in_set,
                                   n_documents_in_subset,
