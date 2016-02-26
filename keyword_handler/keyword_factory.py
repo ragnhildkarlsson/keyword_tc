@@ -1,19 +1,22 @@
 import json
 import os
-
 from .dice_keyword_generator import get_dice_keywords
+import specification_handler
 
 
-def get_keyword_generator_algorithm(algorithm_name):
-    keyword_generator_algorithms = {
-        "dice":get_dice_keywords
-    }
+def __get_keywords_by_generator_algorithm(algorithm_name,keyword_setup_id,keyword_spec):
 
-    if not algorithm_name in keyword_generator_algorithms:
-        raise NotImplemented("Keyword generator algorithm not implemented: " + algorithm_name)
+    if algorithm_name =="dice":
+        return get_dice_keywords(keyword_spec)
+    if algorithm_name =="manual":
+        return __load_manual_created_keyword_setup(keyword_setup_id)
 
-    return keyword_generator_algorithms[algorithm_name]
+    raise NotImplemented("Keyword generator algorithm not implemented: " + algorithm_name)
 
+
+def __load_manual_created_keyword_setup(keyword_setup_id):
+    keywords = specification_handler.get_specification("keyword_setups", keyword_setup_id)
+    return keywords
 
 def check_for_constructed_keyword_setup(keyword_id):
     file_path = os.path.join("data/keyword_setups", keyword_id + ".json")
@@ -26,6 +29,7 @@ def print_keyword_setup_to_json(keyword_id, keyword_setup):
     file_path = os.path.join("data/keyword_setups", keyword_id + ".json")
     with open(file_path, 'w') as keyword_setup_file:
         json.dump(keyword_setup, keyword_setup_file, sort_keys=True,indent=4)
+
 
 """
 
@@ -65,7 +69,7 @@ Returns given reference words together with generated kewywords at format:
 """
 
 def get_keywords(keyword_specification, keyword_setup_id):
-    keyword_algorithm = get_keyword_generator_algorithm(keyword_specification["keyword_generate_algorithm"])
-    keywords =  keyword_algorithm(keyword_specification)
+    keyword_algorithm_name = keyword_specification["keyword_generate_algorithm"]
+    keywords =  __get_keywords_by_generator_algorithm(keyword_algorithm_name, keyword_setup_id, keyword_specification)
     print_keyword_setup_to_json(keyword_setup_id, keywords)
     return keywords

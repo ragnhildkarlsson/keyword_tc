@@ -94,7 +94,7 @@ class TestKeywordFiltering(TestCase):
     def test_no_n_gram_with_seed(self):
 
         given_reference_words = {"cat":{
-                                    1:["cat"],
+                                    1:["cat","animal"],
                                 },
                                 "dog:":{
                                     1:["dog"]
@@ -102,7 +102,7 @@ class TestKeywordFiltering(TestCase):
                                 }
 
         new_reference_words =  {"cat":{
-                                    1:[('no_cat', "_"), ('cat_no', "_"), ('no_cat_no', '_'), ('jaguar', '_')],
+                                    1:[('no_cat', "_"), ('cat_no', "_"), ('no_cat_no', '_'), ('jaguar', '_'),('animal_mjaou', '_')],
                                 },
                                 "dog:":{
                                     1:[("dog","_"),("doggy_bag","_"),("hound","_"),("animal_cat","_"),('doggy','_')]

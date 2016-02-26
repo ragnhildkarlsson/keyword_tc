@@ -4678,7 +4678,7 @@
                 "small"
             ]
         },
-        "olympic games": {
+        "olympic_games": {
             "0": [
                 "games",
                 "london_olympic_games",
@@ -7794,7 +7794,6 @@
         },
         "classical_music": {
             "0": [
-                "classical music",
                 "classical_music",
                 "classical"
             ]
@@ -7817,7 +7816,6 @@
                 "comic_book",
                 "comic_book_store",
                 "comic_books",
-                "comic book",
                 "comic",
                 "comic_book_artist"
             ]
@@ -7851,7 +7849,6 @@
                 "music_star",
                 "country_music",
                 "nashville",
-                "country music",
                 "country_music_star"
             ]
         },
@@ -8047,7 +8044,6 @@
                 "hop_artist",
                 "hip",
                 "hip_hop",
-                "hip hop",
                 "hip_hop_culture",
                 "hop",
                 "hop_culture"
@@ -8332,7 +8328,6 @@
                 "martial_arts_master",
                 "martial_arts",
                 "mixed_martial_arts",
-                "martial arts",
                 "arts_expert",
                 "mixed_martial",
                 "kung",
@@ -8483,9 +8478,8 @@
                 "nature"
             ]
         },
-        "olympic games": {
+        "olympic_games": {
             "0": [
-                "olympic games",
                 "summer_olympic_games",
                 "olympic",
                 "summer_olympic",
@@ -8512,7 +8506,6 @@
             "0": [
                 "outer",
                 "outer_space",
-                "outer space",
                 "space"
             ]
         },
@@ -8723,7 +8716,6 @@
                 "water_sports_poses",
                 "owls_back_health",
                 "ordinary_bathtub_perform",
-                "water sports",
                 "apparently_two_baby",
                 "flowering_plants_experiments",
                 "compete_become_next",

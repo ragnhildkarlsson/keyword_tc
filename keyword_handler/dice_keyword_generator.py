@@ -230,6 +230,35 @@ def __calculate_raw_dice_keywords(keyword_specification):
 
     return {"raw_reference_words": new_reference_words, "raw_context_words":new_context_words}
 
+def fix_olympic_games_1(keywords_id):
+    if cache.in_cache("keywords", keywords_id):
+        keywords = cache.load("keywords", keywords_id)
+        keyword_types = ["reference_words","context_words"]
+        for keyword_type in keyword_types:
+            if "olympic games" in keywords[keyword_type]:
+                print("Fix olympic game in keyword directory " + keywords_id)
+                olympic_keywords = keywords[keyword_type].pop("olympic games")
+                keywords[keyword_type]["olympic_games"] = olympic_keywords
+            for category in keywords[keyword_type]:
+                keywords[keyword_type][category]['0'] = [keyword for keyword in keywords[keyword_type][category]['0'] if not " " in keyword]
+        cache.write("keywords", keywords_id, keywords)
+    return keywords
+
+def fix_olympic_games_2(keywords_no_filter_id):
+    if cache.in_cache(__RAW_KEYWORD_CACHE, keywords_no_filter_id):
+        keywords= cache.load(__RAW_KEYWORD_CACHE, keywords_no_filter_id)
+        keyword_types = list(keywords.keys())
+        for keyword_type in keyword_types:
+            if "olympic games" in keywords[keyword_type]:
+                print("Fix olympic game in keyword directory " + keywords_no_filter_id)
+                olympic_keywords = keywords[keyword_type].pop("olympic games")
+                keywords[keyword_type]["olympic_games"] = olympic_keywords
+            for category in keywords[keyword_type]:
+                keywords[keyword_type][category]['0'] = [keyword for keyword in keywords[keyword_type][category]['0'] if not " " in keyword]
+        cache.write(__RAW_KEYWORD_CACHE, keywords_no_filter_id, keywords)
+    return keywords
+
+
 
 """
     Returns a map that contains

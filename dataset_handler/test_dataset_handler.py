@@ -1,5 +1,5 @@
 import os
-
+from indexing import n_gram_handler
 import specification_handler
 import dataset_handler
 
@@ -27,7 +27,7 @@ class TestDatasetHandler:
         Return the name of all categories in the test set
     """
 
-    def get_all_category_names(self):
+    def __get_all_category_directory_names(self):
         subdirectories = dataset_handler.get_all_subdirectory_names(self.data_path)
         subdirectories = [sd for sd in subdirectories if not sd == self.NO_CATEGORY_FOLDER_NAME]
         return subdirectories
@@ -38,11 +38,12 @@ class TestDatasetHandler:
 
     def get_gold_standard_categorization(self):
         gold_standard_categorization = {}
-        categories = self.get_all_category_names()
+        categories = self.__get_all_category_directory_names()
         for category in categories:
             category_path = self.__get_category_path(category)
             all_documents_in_category = dataset_handler.get_names_of_files_in_directory(category_path)
-            gold_standard_categorization[category] = all_documents_in_category
+            category_index_term = n_gram_handler.string_to_index_term(category)
+            gold_standard_categorization[category_index_term] = all_documents_in_category
         return gold_standard_categorization
 
     """

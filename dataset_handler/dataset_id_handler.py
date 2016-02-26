@@ -9,7 +9,11 @@ def get_training_data_id(training_data_spec):
     filters_id = "".join(filters_id)
     return  training_dataset_id +"_"+ filters_id
 
-def get_test_data_id(experiment_spec):
+def get_dataset_combination_id(experiment_spec):
     training_data_id = get_training_data_id(experiment_spec["training_dataset"])
-    test_data_id = experiment_spec["test_dataset"]["test_data_id"]
+    test_data_id = experiment_spec["test_dataset"]["id"]
     return training_data_id +"_"+ test_data_id
+
+def get_test_data_id(experiment_spec):
+    test_data_id = experiment_spec["test_dataset"]["id"]
+    return test_data_id

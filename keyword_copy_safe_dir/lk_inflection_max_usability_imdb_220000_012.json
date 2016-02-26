@@ -4755,7 +4755,7 @@
                 "small"
             ]
         },
-        "olympic games": {
+        "olympic_games": {
             "0": [
                 "games",
                 "london_olympic_games",
@@ -7732,215 +7732,212 @@
     "reference_words": {
         "airplanes": {
             "0": [
-                "airplanes",
-                "airplane"
+                "airplane",
+                "airplanes"
             ]
         },
         "aliens": {
             "0": [
+                "aliens",
                 "alien",
                 "planet",
-                "ailien",
-                "aliens"
+                "ailien"
             ]
         },
         "animals": {
             "0": [
+                "wild",
                 "animals",
-                "animal",
-                "wild"
+                "animal"
             ]
         },
         "arts": {
             "0": [
                 "arts",
                 "artist",
-                "art",
                 "martial",
-                "artists"
+                "artists",
+                "art"
             ]
         },
         "baseball": {
             "0": [
-                "league",
-                "major_league",
+                "pitcher",
                 "bat",
+                "major_league",
                 "baseball",
-                "pitcher"
+                "league"
             ]
         },
         "basketball": {
             "0": [
                 "nba",
-                "coach",
                 "player",
+                "coach",
                 "basketball"
             ]
         },
         "bicycle": {
             "0": [
-                "bicycling",
-                "bicycle",
                 "bicycles",
-                "bycycler",
-                "bike"
+                "bike",
+                "bicycle",
+                "bicycling",
+                "bycycler"
             ]
         },
         "boxing": {
             "0": [
+                "boxing",
                 "boxer",
-                "champion",
-                "boxing"
+                "champion"
             ]
         },
         "buddhism": {
             "0": [
-                "buddhism",
-                "buddhist",
-                "tibet",
-                "monk",
+                "monks",
                 "tibetan",
-                "monks"
+                "monk",
+                "buddhist",
+                "buddhism",
+                "tibet"
             ]
         },
         "business": {
             "0": [
                 "business",
-                "money",
-                "partner"
+                "partner",
+                "money"
             ]
         },
         "cars": {
             "0": [
+                "road",
+                "cars",
                 "police",
                 "accident",
-                "driver",
-                "car",
                 "driving",
-                "road",
-                "cars"
+                "car",
+                "driver"
             ]
         },
         "christianity": {
             "0": [
-                "christianity",
+                "islam",
                 "judaism",
                 "christians",
-                "islam"
+                "christianity"
             ]
         },
         "christmas": {
             "0": [
-                "christmas",
                 "claus",
-                "santa_claus",
                 "holidays",
-                "eve",
+                "santa",
+                "christmas",
+                "santa_claus",
                 "holiday",
-                "santa"
+                "eve"
             ]
         },
         "cinema": {
             "0": [
-                "cinemas",
-                "cinema"
+                "cinema",
+                "cinemas"
             ]
         },
         "classical_music": {
             "0": [
-                "classical music",
                 "classical",
                 "classical_music"
             ]
         },
         "college--university": {
             "0": [
-                "students",
-                "professor",
-                "college",
                 "university",
-                "student"
+                "professor",
+                "student",
+                "students",
+                "college"
             ]
         },
         "comic-book": {
             "0": [
-                "comic_book_store",
-                "comic_book",
-                "book_store",
-                "comic",
-                "book",
-                "book_artist",
-                "comic_book_artist",
                 "comic_books",
-                "comic book"
+                "comic_book_store",
+                "comic",
+                "comic_book",
+                "book",
+                "book_store",
+                "comic_book_artist",
+                "book_artist"
             ]
         },
         "communism": {
             "0": [
                 "communism",
-                "regime",
                 "soviet",
+                "regime",
                 "communist"
             ]
         },
         "cookery": {
             "0": [
-                "meets_prospective",
-                "bib",
-                "night_spot",
                 "skoose",
                 "excellent_cook",
-                "cookery"
+                "cookery",
+                "night_spot",
+                "meets_prospective",
+                "bib"
             ]
         },
         "country_music": {
             "0": [
-                "world_country_music",
+                "country_music",
                 "music_star",
                 "country_music_star",
-                "country music",
+                "world_country_music",
                 "country_star",
-                "nashville",
-                "country_music"
+                "nashville"
             ]
         },
         "crime": {
             "0": [
-                "criminal",
-                "crime",
-                "police",
-                "scene",
                 "case",
-                "detective",
                 "prison",
+                "crime",
+                "crimes",
+                "criminal",
+                "police",
+                "detective",
                 "murder",
-                "crimes"
+                "scene"
             ]
         },
         "dance": {
             "0": [
                 "music",
-                "dances",
-                "dancing",
                 "dance",
+                "dancers",
+                "dancing",
                 "dancer",
-                "dancers"
+                "dances"
             ]
         },
         "disability": {
             "0": [
-                "disability",
-                "disabled",
                 "disabilities",
-                "developmental"
+                "developmental",
+                "disability",
+                "disabled"
             ]
         },
         "drugs": {
             "0": [
                 "dealer",
-                "drug",
                 "addiction",
-                "drugs"
+                "drugs",
+                "drug"
             ]
         },
         "education": {
@@ -7950,16 +7947,16 @@
         },
         "fashion": {
             "0": [
+                "fashion",
                 "designer",
-                "model",
-                "fashion"
+                "model"
             ]
         },
         "football": {
             "0": [
-                "football",
-                "player",
                 "players",
+                "player",
+                "football",
                 "coach"
             ]
         },
@@ -7970,44 +7967,43 @@
         },
         "gambling": {
             "0": [
-                "gambler",
-                "debts",
+                "debt",
                 "casino",
                 "gambling",
-                "debt"
+                "debts",
+                "gambler"
             ]
         },
         "golf": {
             "0": [
-                "golfer",
-                "golf"
+                "golf",
+                "golfer"
             ]
         },
         "hinduism": {
             "0": [
-                "muslim",
-                "hindus",
                 "hindu",
+                "hindus",
+                "muslim",
                 "hinduism"
             ]
         },
         "hip_hop": {
             "0": [
-                "rap",
-                "hop",
-                "hip_hop",
+                "hip_hop_artist",
                 "hop_culture",
                 "hop_artist",
-                "hip hop",
-                "hip_hop_artist",
+                "hip_hop",
+                "hip_hop_culture",
                 "hip",
-                "hip_hop_culture"
+                "hop",
+                "rap"
             ]
         },
         "history": {
             "0": [
-                "documentary",
                 "history",
+                "documentary",
                 "american"
             ]
         },
@@ -8018,102 +8014,102 @@
         },
         "horseracing": {
             "0": [
-                "first_recipient_distinguished",
-                "women_trailblazers",
-                "insurance_investgator_follows",
-                "corruption_concering",
-                "web_corruption_concering",
-                "car_claim",
-                "investgator",
-                "race_crashes_car",
-                "seasoned_horse",
-                "race_crashes",
                 "upbeat_engaging_bettye",
-                "hour_documentary_meet",
-                "trainer_bettye_gabriel",
-                "along_women_trailblazers",
-                "company_suspicion_foul",
                 "concering_fixed_horse",
-                "foul_play_stumbles",
-                "shrewd_energetic_insurance",
-                "engaging_bettye_gabriel",
-                "insurance_jim_matthews",
-                "claim_insurance_jim",
-                "gabriel_along",
-                "recipient_distinguished_women",
-                "crashes_car_claim",
-                "investgator_follows",
-                "gabriel_one_hour",
-                "matthews_shrewd_energetic",
-                "gabriel_along_women",
-                "matthews_shrewd",
-                "company_suspicion",
-                "concering_fixed",
-                "insurance_investgator",
-                "award_seasoned",
-                "deep_web",
-                "shrewd_energetic",
-                "fixed_horse_races",
-                "bettye_gabriel_along",
-                "distinguished_women",
-                "deep_web_corruption",
-                "suspicion_foul_play",
-                "persevered_male_dominated",
-                "jim_matthews_shrewd",
-                "jockey_loses_race",
-                "play_stumbles_deep",
-                "car_claim_insurance",
-                "energetic_insurance",
-                "bettye_gabriel_one",
-                "investgator_follows_company",
-                "seasoned_horse_trainer",
-                "insurance_jim",
-                "perspective_thoroughbred",
                 "meet_upbeat",
-                "stumbles_deep",
-                "trainer_bettye",
-                "bettye_gabriel",
-                "trailblazers_persevered_male",
-                "concering",
-                "female_perspective_thoroughbred",
-                "eyes_first_recipient",
-                "engaging_bettye",
-                "corruption_concering_fixed",
-                "recipient_distinguished",
-                "women_trailblazers_persevered",
-                "jim_matthews",
-                "suspicion_foul",
-                "trailblazers_persevered",
-                "award_seasoned_horse",
-                "loses_race_crashes",
-                "persevered_male",
-                "energetic_insurance_investgator",
-                "seen_eyes_first",
-                "play_stumbles",
-                "horseracing",
-                "jockey_loses",
                 "upbeat_engaging",
-                "horse_trainer_bettye",
-                "stumbles_deep_web",
-                "wally_sanders",
+                "first_recipient_distinguished",
+                "eyes_first_recipient",
+                "insurance_jim_matthews",
+                "jockey_loses",
+                "play_stumbles_deep",
+                "trailblazers_persevered",
+                "gabriel_along_women",
+                "trainer_bettye",
+                "along_women_trailblazers",
+                "women_trailblazers_persevered",
+                "horseracing",
+                "company_suspicion_foul",
+                "persevered_male_dominated",
+                "shrewd_energetic_insurance",
+                "crashes_car_claim",
                 "follows_company_suspicion",
+                "engaging_bettye_gabriel",
+                "loses_race_crashes",
+                "energetic_insurance_investgator",
+                "claim_insurance_jim",
+                "corruption_concering",
+                "recipient_distinguished_women",
+                "shrewd_energetic",
+                "trailblazers_persevered_male",
+                "gabriel_one_hour",
+                "suspicion_foul_play",
+                "insurance_jim",
                 "documentary_meet_upbeat",
-                "meet_upbeat_engaging"
+                "insurance_investgator",
+                "horse_trainer_bettye",
+                "car_claim",
+                "jockey_loses_race",
+                "foul_play_stumbles",
+                "company_suspicion",
+                "hour_documentary_meet",
+                "fixed_horse_races",
+                "race_crashes_car",
+                "perspective_thoroughbred",
+                "corruption_concering_fixed",
+                "bettye_gabriel_along",
+                "investgator_follows_company",
+                "women_trailblazers",
+                "jim_matthews",
+                "seasoned_horse_trainer",
+                "award_seasoned_horse",
+                "suspicion_foul",
+                "matthews_shrewd_energetic",
+                "recipient_distinguished",
+                "matthews_shrewd",
+                "investgator",
+                "stumbles_deep_web",
+                "race_crashes",
+                "jim_matthews_shrewd",
+                "energetic_insurance",
+                "persevered_male",
+                "play_stumbles",
+                "deep_web",
+                "web_corruption_concering",
+                "concering",
+                "seasoned_horse",
+                "car_claim_insurance",
+                "bettye_gabriel_one",
+                "seen_eyes_first",
+                "female_perspective_thoroughbred",
+                "meet_upbeat_engaging",
+                "distinguished_women",
+                "bettye_gabriel",
+                "trainer_bettye_gabriel",
+                "wally_sanders",
+                "gabriel_along",
+                "award_seasoned",
+                "concering_fixed",
+                "deep_web_corruption",
+                "investgator_follows",
+                "insurance_investgator_follows",
+                "stumbles_deep",
+                "engaging_bettye"
             ]
         },
         "infants": {
             "0": [
-                "infants",
-                "infant"
+                "infant",
+                "infants"
             ]
         },
         "islam": {
             "0": [
-                "muslim",
+                "muslims",
                 "islamic",
-                "hindu",
                 "islam",
-                "muslims"
+                "muslim",
+                "hindu"
             ]
         },
         "jazz": {
@@ -8123,15 +8119,15 @@
         },
         "journalism": {
             "0": [
-                "journalist",
-                "journalism"
+                "journalism",
+                "journalist"
             ]
         },
         "judaism": {
             "0": [
-                "christianity",
+                "conversion",
                 "judaism",
-                "conversion"
+                "christianity"
             ]
         },
         "legal": {
@@ -8141,90 +8137,90 @@
         },
         "literature": {
             "0": [
-                "native_new_englander",
-                "conducts",
-                "publishing",
-                "cable_television",
-                "television_show",
-                "englander_usually",
-                "cable_television_show",
-                "movies_music",
-                "theatre_interviews_conducted",
-                "conducted_either_location",
-                "conducted_either",
-                "conducts_interviews",
-                "live_theatre_interviews",
-                "promotions_publishing",
-                "music_promotions",
-                "marketing",
-                "cable",
-                "lifestyles",
-                "show_stars_harrison",
-                "music_promotions_publishing",
-                "businesses_specialize_advertising",
-                "stars_harrison_young",
-                "specialize_advertising",
-                "fashion_health",
-                "radio_sports",
-                "stars_harrison",
-                "usually_conducts",
-                "art_comedy",
-                "englander",
-                "literature",
-                "variety_talented_individuals",
-                "new_englander_usually",
-                "dining_fashion",
-                "usually_conducts_interviews",
-                "specialize_advertising_art",
-                "sports_television_live",
-                "young_native_new",
-                "interviews_conducted_either",
-                "interviews_conducted",
-                "work_businesses",
-                "specialize",
-                "talented_individuals",
-                "harrison",
-                "harrison_young",
-                "interviews_variety_talented",
-                "marketing_movies_music",
-                "live_theatre",
-                "movies_music_promotions",
-                "harrison_young_native",
-                "conducts_interviews_variety",
-                "advertising_art_comedy",
-                "sports_television",
-                "variety_talented",
-                "native_new",
-                "show_stars",
-                "fashion_health_lifestyles",
-                "businesses",
-                "promotions_publishing_radio",
-                "radio_sports_television",
-                "publishing_radio_sports",
-                "marketing_movies",
-                "businesses_specialize",
-                "new_englander",
-                "health_lifestyles",
-                "promotions",
-                "comedy_dining_fashion",
-                "comedy_dining",
-                "individuals_work_businesses",
-                "young_native",
-                "art_comedy_dining",
-                "work_businesses_specialize",
-                "englander_usually_conducts",
-                "theatre_interviews",
-                "individuals_work",
-                "publishing_radio",
-                "either_location",
-                "advertising_art",
-                "interviews_variety",
-                "dining_fashion_health",
                 "talented_individuals_work",
                 "television_show_stars",
+                "interviews_conducted",
+                "promotions_publishing_radio",
+                "literature",
+                "interviews_variety",
+                "cable",
+                "movies_music",
+                "stars_harrison_young",
+                "show_stars_harrison",
+                "art_comedy",
+                "music_promotions",
+                "publishing_radio",
+                "young_native",
+                "englander_usually",
+                "live_theatre",
+                "cable_television",
+                "television_show",
+                "work_businesses",
+                "theatre_interviews",
+                "marketing_movies",
+                "sports_television_live",
+                "promotions_publishing",
+                "fashion_health",
+                "dining_fashion_health",
+                "health_lifestyles",
+                "conducts_interviews",
+                "promotions",
+                "native_new_englander",
+                "advertising_art_comedy",
+                "specialize_advertising_art",
+                "variety_talented_individuals",
+                "new_englander",
+                "specialize_advertising",
+                "harrison",
+                "conducted",
+                "theatre_interviews_conducted",
+                "dining_fashion",
+                "talented_individuals",
+                "new_englander_usually",
+                "young_native_new",
+                "englander",
+                "interviews_conducted_either",
+                "individuals_work_businesses",
+                "stars_harrison",
+                "live_theatre_interviews",
+                "harrison_young_native",
+                "conducted_either_location",
+                "music_promotions_publishing",
+                "native_new",
+                "conducts",
+                "comedy_dining_fashion",
+                "businesses_specialize_advertising",
+                "harrison_young",
+                "businesses_specialize",
+                "lifestyles",
                 "television_live_theatre",
+                "marketing_movies_music",
+                "either_location",
                 "television_live",
-                "conducted"
+                "conducts_interviews_variety",
+                "radio_sports_television",
+                "show_stars",
+                "englander_usually_conducts",
+                "work_businesses_specialize",
+                "specialize",
+                "marketing",
+                "comedy_dining",
+                "art_comedy_dining",
+                "individuals_work",
+                "usually_conducts",
+                "radio_sports",
+                "interviews_variety_talented",
+                "movies_music_promotions",
+                "usually_conducts_interviews",
+                "publishing_radio_sports",
+                "fashion_health_lifestyles",
+                "businesses",
+                "conducted_either",
+                "sports_television",
+                "variety_talented",
+                "publishing",
+                "cable_television_show",
+                "advertising_art"
             ]
         },
         "mafia": {
@@ -8234,19 +8230,17 @@
         },
         "martial-arts": {
             "0": [
+                "kung_fu",
+                "arts",
+                "kung",
+                "fu",
                 "mixed_martial",
                 "martial_arts",
-                "arts",
-                "martial art",
-                "kung",
+                "mixed_martial_arts",
                 "martial",
-                "martial_arts_expert",
                 "arts_expert",
                 "martial_art",
-                "martial arts",
-                "kung_fu",
-                "mixed_martial_arts",
-                "fu"
+                "martial_arts_expert"
             ]
         },
         "medicine": {
@@ -8256,127 +8250,127 @@
         },
         "military": {
             "0": [
-                "soldiers",
-                "war",
                 "military",
-                "army"
+                "army",
+                "war",
+                "soldiers"
             ]
         },
         "motorcycle": {
             "0": [
-                "motorcycles",
-                "motorcycle"
+                "motorcycle",
+                "motorcycles"
             ]
         },
         "motoring": {
             "0": [
-                "try_make_artwork",
-                "testimony_swindlers_speechless",
-                "order_benefit_banks",
-                "garage_oil_coolers",
-                "stating_get_anything",
-                "promising_quick_returns",
-                "camry_road_tests",
-                "tim_start_date",
-                "presenters_shane_jacobson",
-                "takes_joke_discounts",
-                "joy_misinterpreted_scott",
-                "sympathy_woman_simulated",
-                "marry_james_gordon",
-                "arriving_ready_early",
-                "might_traveling_constant",
-                "car_announced_along",
-                "escorted_home_said",
-                "time_possible_soldier",
-                "anyone_actually_driving",
-                "skill_everything_legends",
-                "heart_program_battle",
-                "best_worst_british",
-                "lotus_esprit_aged",
-                "man_lost_thousand",
-                "corolla_silvia_nissan",
-                "withdrew_earn_livelihood",
-                "mike_hunt_car",
-                "toyota_camry_road",
-                "aggressive_behavior_social",
-                "useful_maps_signposts",
-                "policy_jabs_necklace",
-                "australia_get_usual",
-                "encounter_tramp_night",
-                "great_unsung_british",
-                "spare_parts_mention",
-                "hunt_car_like",
-                "tv_pit_lane",
-                "two_wizards_high",
-                "arranged_young",
-                "time_see_finish",
-                "tune_car_drifting",
-                "program_battle_philosophies",
-                "road_tests_porsche",
-                "details_plot_eliminated",
-                "awful_roads_back",
-                "british_presenters_jeremy",
-                "toyota",
-                "henry_speed_track",
-                "school_teacher_poppy",
-                "ashes_special_top",
-                "coolers_first_impressions",
-                "mismanagement_father_girl",
-                "pull_strings_realizes",
-                "meet_british_presenters",
-                "appeared_series_sbs",
-                "drifting_keiichi_also",
-                "caught_growing_irritated",
-                "one_four_arrogant",
-                "returns_investments_suddenly",
-                "fugitive_broker_determined",
-                "tracks_take_blame",
-                "meantime_brown_james",
                 "success_lee_summit",
-                "best_vehicle_jeremy",
-                "vehicle_jeremy_finds",
-                "amazement_members_jabs",
-                "track_conclusion_search",
-                "tests_new_noble",
-                "summit_missouri_first",
-                "top_gear_ashes",
-                "remarks_calmly_jabs",
-                "unveils_secrets_trade",
+                "useful_maps_signposts",
+                "meantime_brown_james",
                 "series_challenges_steve",
-                "track_time_race",
-                "driver_won_entry",
+                "aggressive_behavior_social",
+                "might_traveling_constant",
+                "australia_get_usual",
+                "man_lost_thousand",
                 "appearance_race_start",
-                "highway_featuring_history",
-                "oar_quickly_donning",
-                "whole_affair_meets",
                 "air_watched_viewers",
-                "domain_unveils_secrets",
-                "necklace_claims_reward",
-                "won_bet_trophy",
-                "mercy_sea_broken",
-                "method_enables_marry",
-                "program_unearths_superstars",
-                "cellar_house_chief",
-                "classic_car_market",
-                "signposts_resulting_short",
-                "film_opens_reception",
-                "teacher_poppy_cross",
-                "motoring",
                 "announced_along_awards",
-                "swindlers_bookkeeper_short"
+                "car_announced_along",
+                "toyota",
+                "takes_joke_discounts",
+                "hunt_car_like",
+                "road_tests_porsche",
+                "skill_everything_legends",
+                "arriving_ready_early",
+                "garage_oil_coolers",
+                "remarks_calmly_jabs",
+                "drifting_keiichi_also",
+                "amazement_members_jabs",
+                "tests_new_noble",
+                "great_unsung_british",
+                "testimony_swindlers_speechless",
+                "spare_parts_mention",
+                "program_unearths_superstars",
+                "won_bet_trophy",
+                "necklace_claims_reward",
+                "driver_won_entry",
+                "awful_roads_back",
+                "best_worst_british",
+                "mike_hunt_car",
+                "mismanagement_father_girl",
+                "order_benefit_banks",
+                "film_opens_reception",
+                "arranged_young",
+                "swindlers_bookkeeper_short",
+                "stating_get_anything",
+                "lotus_esprit_aged",
+                "appeared_series_sbs",
+                "tv_pit_lane",
+                "details_plot_eliminated",
+                "coolers_first_impressions",
+                "presenters_shane_jacobson",
+                "cellar_house_chief",
+                "track_time_race",
+                "school_teacher_poppy",
+                "joy_misinterpreted_scott",
+                "top_gear_ashes",
+                "policy_jabs_necklace",
+                "corolla_silvia_nissan",
+                "signposts_resulting_short",
+                "one_four_arrogant",
+                "tracks_take_blame",
+                "domain_unveils_secrets",
+                "promising_quick_returns",
+                "two_wizards_high",
+                "meet_british_presenters",
+                "teacher_poppy_cross",
+                "british_presenters_jeremy",
+                "tim_start_date",
+                "ashes_special_top",
+                "track_conclusion_search",
+                "henry_speed_track",
+                "try_make_artwork",
+                "summit_missouri_first",
+                "anyone_actually_driving",
+                "withdrew_earn_livelihood",
+                "highway_featuring_history",
+                "toyota_camry_road",
+                "caught_growing_irritated",
+                "time_see_finish",
+                "method_enables_marry",
+                "escorted_home_said",
+                "pull_strings_realizes",
+                "vehicle_jeremy_finds",
+                "motoring",
+                "returns_investments_suddenly",
+                "mercy_sea_broken",
+                "sympathy_woman_simulated",
+                "program_battle_philosophies",
+                "encounter_tramp_night",
+                "oar_quickly_donning",
+                "best_vehicle_jeremy",
+                "whole_affair_meets",
+                "fugitive_broker_determined",
+                "unveils_secrets_trade",
+                "time_possible_soldier",
+                "classic_car_market",
+                "camry_road_tests",
+                "tune_car_drifting",
+                "marry_james_gordon",
+                "heart_program_battle"
             ]
         },
         "music": {
             "0": [
                 "music",
-                "film",
-                "band",
+                "artists",
                 "dance",
-                "musicians",
                 "video",
                 "musical",
-                "rock",
-                "artists"
+                "band",
+                "film",
+                "musicians",
+                "rock"
             ]
         },
         "mythology": {
@@ -8389,14 +8383,13 @@
                 "nature"
             ]
         },
-        "olympic games": {
+        "olympic_games": {
             "0": [
-                "olympic",
-                "summer_olympic_games",
                 "summer_olympic",
+                "olympic",
+                "olympic_games",
                 "olympics",
-                "olympic games",
-                "olympic_games"
+                "summer_olympic_games"
             ]
         },
         "opera": {
@@ -8413,9 +8406,8 @@
         },
         "outer_space": {
             "0": [
-                "space",
-                "outer space",
                 "outer_space",
+                "space",
                 "outer"
             ]
         },
@@ -8428,32 +8420,32 @@
         },
         "political": {
             "0": [
-                "political",
+                "politician",
                 "politics",
-                "politician"
+                "political"
             ]
         },
         "pop--rock": {
             "0": [
                 "music",
-                "pop",
                 "band",
+                "pop",
                 "rock",
-                "star",
-                "roll"
+                "roll",
+                "star"
             ]
         },
         "prison": {
             "0": [
-                "sentence",
-                "prison",
-                "escape",
-                "sent",
                 "arrested",
-                "sentenced",
+                "prison",
                 "jail",
                 "prisons",
+                "sentence",
+                "sent",
+                "sentenced",
                 "released",
+                "escape",
                 "prisoners"
             ]
         },
@@ -8470,56 +8462,56 @@
         },
         "radio": {
             "0": [
-                "station",
-                "radio"
+                "radio",
+                "station"
             ]
         },
         "religion": {
             "0": [
-                "religion",
+                "religious",
                 "religions",
-                "religious"
+                "religion"
             ]
         },
         "school": {
             "0": [
-                "students",
-                "get",
-                "friends",
-                "day",
-                "school",
-                "teacher",
-                "girl",
-                "class",
-                "mother",
-                "parents",
                 "old",
                 "high",
-                "new",
+                "mother",
+                "day",
                 "go",
-                "schools",
+                "teacher",
+                "parents",
+                "girl",
+                "students",
+                "student",
                 "year",
-                "student"
+                "schools",
+                "new",
+                "get",
+                "friends",
+                "class",
+                "school"
             ]
         },
         "science": {
             "0": [
-                "science",
-                "fiction"
+                "fiction",
+                "science"
             ]
         },
         "ships": {
             "0": [
-                "crew",
+                "board",
                 "aboard",
-                "ship",
-                "ships",
                 "captain",
+                "ship",
                 "sea",
                 "planet",
                 "cruise",
                 "vessel",
-                "board"
+                "crew",
+                "ships"
             ]
         },
         "showbiz": {
@@ -8529,17 +8521,17 @@
         },
         "skiing": {
             "0": [
-                "skiers",
+                "skiing",
                 "slopes",
                 "ski",
-                "skiing"
+                "skiers"
             ]
         },
         "soccer": {
             "0": [
-                "world_cup",
                 "soccer",
-                "cup"
+                "cup",
+                "world_cup"
             ]
         },
         "sport": {
@@ -8550,11 +8542,11 @@
         },
         "surfing": {
             "0": [
-                "surfing",
-                "surfers",
-                "surfer",
+                "waves",
                 "surf",
-                "waves"
+                "surfing",
+                "surfer",
+                "surfers"
             ]
         },
         "swimming": {
@@ -8567,8 +8559,8 @@
         },
         "technology": {
             "0": [
-                "technology",
-                "advanced"
+                "advanced",
+                "technology"
             ]
         },
         "tennis": {
@@ -8578,150 +8570,148 @@
         },
         "terrorism": {
             "0": [
-                "terrorist",
                 "terrorists",
+                "terrorist",
                 "terrorism"
             ]
         },
         "theater": {
             "0": [
-                "theaters",
-                "theater"
+                "theater",
+                "theaters"
             ]
         },
         "traditions": {
             "0": [
-                "tradition",
-                "traditions"
+                "traditions",
+                "tradition"
             ]
         },
         "travel": {
             "0": [
-                "travels",
-                "treveler",
                 "traveling",
-                "travel"
+                "travel",
+                "travels",
+                "treveler"
             ]
         },
         "war": {
             "0": [
-                "civil",
-                "world",
-                "soldiers",
                 "ii",
-                "battle",
-                "army",
+                "american",
+                "soldiers",
+                "civil",
+                "military",
+                "world",
                 "wars",
                 "war",
-                "american",
-                "military",
-                "years"
+                "years",
+                "army",
+                "battle"
             ]
         },
         "water_sports": {
             "0": [
-                "power_human_spirits",
-                "level_film_includes",
-                "surfing_scuba_diving",
-                "glide_filmed_directed",
-                "experience_extreme_water",
-                "water_sport",
-                "ocean_kayaking_alongside",
-                "shows_scattered_glass",
-                "early_waikiki_well",
-                "protecting_conserving_ocean",
-                "surfing_well_discussing",
-                "soap_bubbles_float",
-                "trip_days_follow",
-                "nights_experience_extreme",
-                "inkling_real_aim",
-                "occupant_queer_water",
-                "blame_disturbance_fight",
-                "oranges_given_bath",
-                "reel_visualizes_orange",
-                "growing_water_sport",
-                "upcoming_plans_steven",
-                "today_greatest_water",
-                "shores_lake_meade",
-                "rose_aquacade_uses",
-                "april_episode_world",
-                "ride_lisa_visits",
+                "compete_become_next",
                 "parody_billy_rose",
-                "inspirational_stories_perseverance",
-                "tim_juniors_row",
-                "ambassadors_abilities_overcoming",
-                "water_sports",
-                "news_trevor_unthinkable",
-                "rony_blazek_qv",
-                "discovering_embracing_healing",
-                "craft_standing_foot",
-                "picture_interesting_enjoy",
-                "riding_hurricane_references",
-                "chance_learn_truth",
-                "rapids_nottingham_water",
-                "mood_minding_daantje",
-                "resort_rains_enough",
-                "hammer_made_marble",
-                "reel_shows_care",
-                "cast_member_shares",
-                "hawaii_fiji_tahiti",
+                "shores_lake_meade",
                 "owls_back_health",
-                "aquatic_ballet_dances",
-                "dad_back_gives",
-                "film_includes_breath",
-                "river_shores_lake",
-                "thomas_darrell_breaks",
-                "new_spiderman_ride",
-                "thomas_darrell_surfing",
-                "interesting_request_trip",
-                "point_break_edition",
-                "title_parody_billy",
-                "world_sup_stand",
+                "picture_interesting_enjoy",
+                "reel_shows_care",
                 "burns_pure_oxygen",
+                "first_glide_filmed",
+                "new_spiderman_ride",
+                "resort_rains_enough",
+                "rose_aquacade_uses",
+                "inspirational_stories_perseverance",
+                "occupant_queer_water",
                 "remote_area_czech",
+                "layman_unable_appreciate",
+                "dad_back_gives",
+                "reel_visualizes_orange",
+                "bowl_dropped_liquid",
+                "nights_experience_extreme",
+                "glide_filmed_directed",
+                "surfing_well_discussing",
+                "series_views_apparently",
+                "hammer_made_marble",
+                "news_trevor_unthinkable",
+                "flowering_plants_experiments",
+                "answer_chuckle_brothers",
+                "specializing_extreme_sports",
+                "oranges_given_bath",
+                "placed_two_canoes",
+                "canyons_watch_women",
+                "river_shores_lake",
+                "dances_water_sports",
+                "spiderman_ride_lisa",
+                "enjoy_level_film",
+                "minding_daantje_helps",
                 "bath_immediately_removed",
+                "upcoming_plans_steven",
                 "elder_boys_competitive",
                 "waikiki_well_today",
-                "uses_ordinary_bathtub",
-                "answer_chuckle_brothers",
-                "layman_unable_appreciate",
-                "bath_disinfected_sorted",
-                "series_views_apparently",
-                "greatest_water_men",
                 "shows_care_taken",
-                "placed_two_canoes",
-                "first_glide_filmed",
-                "canyons_watch_women",
-                "oxygen_another_entertaining",
-                "minding_daantje_helps",
-                "standing_foot_big",
-                "specializing_extreme_sports",
-                "shoes_reality_standing",
-                "bowl_dropped_liquid",
-                "machine_complicated_mechanism",
-                "stories_perseverance_reflecting",
+                "hawaii_fiji_tahiti",
                 "break_edition_nocturnal",
-                "sport_follows_evolution",
-                "yet_subsided_even",
-                "enjoy_level_film",
-                "repeated_blossoms_flowering",
-                "dances_water_sports",
-                "bubbles_float_downstairs",
-                "water_sports_poses",
-                "compete_become_next",
-                "air_first_liquefied",
-                "spiderman_ride_lisa",
-                "gives_way_presence",
-                "flowering_plants_experiments",
-                "us_informative_thrilling",
-                "water sport",
-                "canoes_stern_contrivance",
-                "women_compete_become",
-                "japanese_style_jeremy",
-                "orange_industry_california",
+                "stories_perseverance_reflecting",
+                "thomas_darrell_breaks",
+                "protecting_conserving_ocean",
                 "join_models_explore",
+                "us_informative_thrilling",
+                "ambassadors_abilities_overcoming",
+                "ocean_kayaking_alongside",
+                "discovering_embracing_healing",
+                "trip_days_follow",
+                "ride_lisa_visits",
+                "women_compete_become",
+                "water_sports",
+                "gives_way_presence",
+                "mood_minding_daantje",
+                "orange_industry_california",
+                "air_first_liquefied",
+                "interesting_request_trip",
+                "today_greatest_water",
+                "shows_scattered_glass",
+                "film_includes_breath",
+                "repeated_blossoms_flowering",
+                "growing_water_sport",
+                "water_sports_poses",
+                "water_sport",
+                "machine_complicated_mechanism",
+                "rapids_nottingham_water",
+                "chance_learn_truth",
+                "shoes_reality_standing",
+                "japanese_style_jeremy",
+                "level_film_includes",
+                "greatest_water_men",
+                "yet_subsided_even",
+                "april_episode_world",
+                "craft_standing_foot",
+                "point_break_edition",
+                "early_waikiki_well",
+                "sport_follows_evolution",
+                "canoes_stern_contrivance",
+                "standing_foot_big",
+                "title_parody_billy",
+                "inkling_real_aim",
+                "blame_disturbance_fight",
+                "bath_disinfected_sorted",
+                "surfing_scuba_diving",
+                "aquatic_ballet_dances",
+                "thomas_darrell_surfing",
+                "cast_member_shares",
+                "rony_blazek_qv",
+                "power_human_spirits",
+                "world_sup_stand",
+                "oxygen_another_entertaining",
+                "uses_ordinary_bathtub",
+                "tim_juniors_row",
+                "experience_extreme_water",
                 "real_aim_trip",
-                "water sports"
+                "soap_bubbles_float",
+                "bubbles_float_downstairs",
+                "riding_hurricane_references"
             ]
         },
         "weather": {
@@ -8731,8 +8721,8 @@
         },
         "wrestling": {
             "0": [
-                "wrestlers",
                 "wrestler",
+                "wrestlers",
                 "wrestling"
             ]
         }
