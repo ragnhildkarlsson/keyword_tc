@@ -1,0 +1,9 @@
+{
+	"id":"imdb_220000",
+ 	"file_path":"data/training_data_sets/imdb_plots/all_imdb_plots_file",
+ 	"directory_path": "data/training_data_sets/imdb_plots/all_imdb_plots_files",
+ 	"encoding": "ISO-8859-1",
+ 	"seed": "seed",
+ 	"n_documents_in_set": 458712,
+ 	"n_documents_in_subset":220000
+}

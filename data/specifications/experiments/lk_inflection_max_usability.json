@@ -1,0 +1,20 @@
+{
+    "id":"lk_inflection_max_usability",
+	"training_dataset":{
+		"id":"imdb_220000",
+		"filters":["to_lowercase", "only_alpha", "filter_nltk_english_stopwords"]
+	},
+    
+    "keywords":{
+        "setup_id":"lk_inflection_max_usability",
+        "seed_id":"lk_inflection_imdb",
+        "keyword_generate_algorithm" :"dice",
+	    "parameters": {"weight_limit":"0.05","max_number_of_key_words":"100"},
+	    "reference_word_filter":{"no_n_gram_with_seed_filter":{}}
+    },
+    "test_dataset":{
+        "id": "lk_test_data",
+        "test_category_filters":[]
+    }
+
+}

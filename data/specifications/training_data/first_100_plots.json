@@ -1,0 +1,9 @@
+{
+	"id":"first_100_plots",
+ 	"file_path":"test_case_example_data/first_100_plots.txt",
+ 	"directory_path": "data/training_data_sets/imdb_plots/all_imdb_plots_files",
+ 	"encoding": "ISO-8859-1",
+ 	"seed": "first_100_plots",
+ 	"n_documents_in_set": 100,
+ 	"n_documents_in_subset":10
+}
