@@ -1,5 +1,6 @@
 from operator import itemgetter
 import math
+from indexing import n_gram_handler
 
 
 """
@@ -42,7 +43,62 @@ def get_cosinus_ranked_documents(tf_idf_map, reference_words, context_words):
                     ranked_documents[category].append((document,simularity))
 
     #Sort ranked documents in ranked order
+    ranked_documents = __sort_ranked_documents(ranked_documents)
+
+    return ranked_documents
+
+
+
+def __get_flat_keyword_map(keywords):
+    flat_keyword_map =  {}
+    for category in keywords:
+        all_keywords = set()
+        for word_group_id in keywords[category]:
+            for word in keywords[category][ word_group_id]:
+                all_keywords.add(word)
+        flat_keyword_map[category] = all_keywords
+    return flat_keyword_map
+
+def __sort_ranked_documents(ranked_documents):
     for category in ranked_documents:
         ranked_documents[category].sort(key=itemgetter(1), reverse=True)
+    return ranked_documents
 
+def get_ranked_documents_by_keywords(test_document_freq_dists, flat_keywords):
+    ranked_documents = {}
+    for category in flat_keywords:
+            ranked_documents[category] = {}
+
+    for category in flat_keywords:
+        for document_id in test_document_freq_dists:
+            ranked_documents[category][document_id] = 0
+            for index_type in test_document_freq_dists[document_id]:
+                freq_dist = test_document_freq_dists[document_id][index_type]
+                n_terms_in_document = sum([freq_dist[term] for term in freq_dist])
+                for keyword in flat_keywords[category]:
+                    if keyword in freq_dist:
+                        ranked_documents[category][document_id] += (freq_dist[keyword]/n_terms_in_document)
+    return ranked_documents
+
+def __to_rank_list(ranking):
+    for category in ranking:
+        ranking[category] = list(ranking[category].items())
+        ranking[category] = [ranked_doc for ranked_doc in ranking[category] if ranked_doc[1]>0]
+    return ranking
+
+
+def get_grep_ranked_documents(test_document_freq_dists, reference_words, context_words):
+
+    flat_reference_words = __get_flat_keyword_map(reference_words)
+    flat_context_words = __get_flat_keyword_map(context_words)
+    reference_word_ranking = get_ranked_documents_by_keywords(test_document_freq_dists,flat_reference_words)
+    context_word_ranking = get_ranked_documents_by_keywords(test_document_freq_dists, flat_context_words)
+    #merge ranking
+    for category in reference_word_ranking:
+        for document_id in reference_word_ranking:
+            if document_id in context_word_ranking[category]:
+                reference_word_ranking[category][document_id] += context_word_ranking[category][document_id]
+
+    ranked_documents = __to_rank_list(reference_word_ranking)
+    ranked_documents = __sort_ranked_documents(ranked_documents)
     return ranked_documents

@@ -8,37 +8,12 @@ from preprocessing import preprocessing_filters
 from dataset_handler.training_dataset_handler import TrainingDatasetHandler
 from keyword_handler import keyword_filters
 from keyword_handler import keyword_setup_id_generator
+from keyword_handler import posting_list_handler
 
 
 __RAW_KEYWORD_CACHE = "keywords_no_filter"
 __RAW_KEYWORD_BY_INDEX_CACHE = "raw_keywords_by_index"
 
-"""
-Returns a map with the merged posting lists for each reference word group in reference word spec
-"""
-
-
-def __get_reference_word_posting_lists(reference_words_spec, index_directory, indices_id):
-    # Return a map of postings for each reference_word_group_id
-    posting_lists={}
-    # set up structure of posting list map
-    for category in reference_words_spec:
-        posting_lists[category] = {}
-
-    for index_id in indices_id:
-        index = cache.load(index_directory, index_id)
-        index = index["index"]
-        for category in reference_words_spec:
-            reference_word_groups = reference_words_spec[category]
-            for id_reference_word_group in reference_word_groups:
-                if not id_reference_word_group in posting_lists[category]:
-                    posting_lists[category][id_reference_word_group] = []
-                for reference_word in reference_word_groups[id_reference_word_group]:
-                    reference_term = n_gram_handler.string_to_index_term(reference_word)
-                    if reference_term in index:
-                        merged_postings = index_operations.get_merged_posting_lists(posting_lists[category][id_reference_word_group], index[reference_term])
-                        posting_lists[category][id_reference_word_group] = merged_postings
-    return posting_lists
 
 """
     Calculate the dice-coefficients between the given index_terms and the concept                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           represented by the given
@@ -101,6 +76,8 @@ def __calculate_top_n_dice_neighbours_for_index(temporary_keyword_cache_id,
         posting_lists_category = posting_lists[category]
         #TODO remove
         print("Calculate keyword for category "+category)
+        n_posts = sum([len(posting_lists_category[ref_group_id]) for ref_group_id in posting_lists_category])
+        print("Number of posts for category:" + str(n_posts))
         print("Number of categories left "+ str(n_categories_left))
         n_categories_left = n_categories_left -1
         for id_reference_word_group in posting_lists_category:
@@ -215,7 +192,9 @@ def __calculate_raw_dice_keywords(keyword_specification):
     # Calculate keywords
 
     # calculate posting lists for reference word groups
-    posting_lists = __get_reference_word_posting_lists(given_reference_words,index_directory,indices_id)
+    posting_lists = posting_list_handler.get_seed_words_posting_lists(given_reference_words,index_directory,indices_id)
+    posting_lists_id = raw_keywords_id
+    cache.write("posting_lists",posting_lists_id,posting_lists)
     print("Merged posting lists calculated")
 
     top_dice_neighbours = __get_top_n_dice_neighbours(max_number_of_key_words,
