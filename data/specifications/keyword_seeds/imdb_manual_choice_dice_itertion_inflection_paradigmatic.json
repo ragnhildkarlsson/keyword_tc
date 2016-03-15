@@ -3,8 +3,10 @@
             "0": [
                 "aviation",
                 "airliner",
+                "airliners",
                 "airplane",
                 "airplanes",
+                "bussiness class",
                 "plane",
                 "flight",
                 "pilots",
@@ -22,6 +24,8 @@
             "0": [
                 "aliens",
                 "alien",
+                "cyborg",
+                "cyborgs",
                 "ufo",
                 "ufo",
                 "ailien"
@@ -30,7 +34,26 @@
         "animals": {
             "0": [
                 "animals",
-                "animal"
+                "animal",
+                "birds",
+                "insects",
+                "horses",
+                "mammals",
+                "rabbits",
+                "parrots",
+                "butterflies",
+                "cows",
+                "insects",
+                "pigs",
+                "monkeys",
+                "reptiles",
+                "frogs",
+                "elephants",
+                "apes",
+                "birds",
+                "chimps",
+                "turtles",
+                "primates"
             ]
         },
         "arts": {
@@ -44,7 +67,6 @@
         "baseball": {
             "0": [
                 "pitcher",
-                "bat",
                 "major_league",
                 "baseball"
                 ]
@@ -64,8 +86,12 @@
                 "bicycling",
                 "bycycler",
                 "bicycling",
+                "bicyclist",
+                "bicyclists",
                 "cycling",
                 "bikes",
+                "bikeway",
+                "mtb",
                 "cyclist",
                 "cyclists"
             ]
@@ -81,19 +107,27 @@
             "0": [
                 "buddha",
                 "dalai_lama",
+                "dalailama",
                 "buddhist",
+                "buddhists",
                 "buddhism"
             ]
         },
         "business": {
             "0": [
-                "business"
+            "businessman",
+            "businessmen",
+            "company",
+            "business"
             ]
         },
         "cars": {
             "0": [
                 "cars",
-                "car"
+                "car",
+                "truck",
+                "trucks",
+                "automobile"
             ]
         },
         "christianity": {
@@ -101,7 +135,10 @@
                 "christians",
                 "christianity",
                 "jesus",
-                "biblical"
+                "biblical",
+                "mormonism",
+                "chatolic",
+                "catholiscism"
             ]
         },
         "christmas": {
@@ -113,17 +150,22 @@
         "cinema": {
             "0": [
                 "cinema",
+                "cinematic",
                 "cinemas"
             ]
         },
         "classical_music": {
             "0": [
-                "classical_music"
+                "classical_music",
+                "chamber music"
             ]
         },
         "college--university": {
             "0": [
                 "high_school",
+                "highschool",
+                "undergraduate",
+                "graduate school",
                 "university",
                 "college"
             ]
@@ -140,12 +182,27 @@
             "0": [
                 "communists",
                 "communism",
-                "communist"
+                "communist",
+                "marxist",
+                "marxism",
+                "marxism",
+                "stalinist",
+                "mao",
+                "maoist",
+                "maoism"
             ]
         },
         "cookery": {
             "0": [
-                "cookery"
+                "cookery",
+                "cooking",
+                "prepare food",
+                "chef",
+                "cooking",
+                "roasting",
+                "marinating",
+                "prepare food",
+                "frying"
             ]
         },
         "country_music": {
@@ -159,7 +216,12 @@
                 "crime",
                 "crimes",
                 "criminal",
-                "detective"
+                "criminality",
+                "detective",
+                "unlawful",
+                "horrific acts",
+                "murder",
+                "manslaughter"
             ]
         },
         "dance": {
@@ -168,6 +230,8 @@
                 "dancers",
                 "dancing",
                 "dancer",
+                "choreography",
+                "ballet",
                 "dances"
             ]
         },
@@ -177,13 +241,36 @@
                 "autism",
                 "disabilities",
                 "disability",
-                "disabled"
+                "disabled",
+                "autist",
+                "adhd",
+                "cognitive impairment",
+                "dementia",
+                "ocd",
+                "hydrocephalus",
+                "schizophrenia",
+                "rett syndrom",
+                "epilepsy",
+                "spinal injury",
+                "dyslexia",
+                "special needs",
+                "alzheimers",
+                "brain damage"
             ]
         },
         "drugs": {
             "0": [
                 "heroin",
                 "cocaine",
+                "cannabis",
+                "amphetamine",
+                "overdose",
+                "illegal substances",
+                "opiates",
+                "ecstasy",
+                "narcotics",
+                "meth",
+                "crack cocaine",
                 "dealer",
                 "drugs",
                 "drug"
@@ -192,7 +279,8 @@
         "education": {
             "0": [
                 "educational",
-                "education"
+                "education",
+                "schooling"
             ]
         },
         "fashion": {
@@ -207,12 +295,24 @@
         },
         "fraud": {
             "0": [
-                "fraud"
+                "fraud",
+                "forgery",
+                "money_laundering",
+                "frauds",
+                "bribery",
+                "perjury",
+                "bribes",
+                "bribe"
             ]
         },
         "gambling": {
             "0": [
                 "casino",
+                "casinos",
+                "blackjack",
+                "poker",
+                "roulette",
+                "bingo",
                 "gambling",
                 "gambler"
             ]
@@ -220,6 +320,8 @@
         "golf": {
             "0": [
                 "golf",
+                "golfing",
+                "golfers",
                 "golfer"
             ]
         },
@@ -249,14 +351,21 @@
         },
         "horseracing": {
             "0": [
-                "horseracing"
+                "horseracing",
+                "horse racing",
+                "horse races",
+                "horse race"
             ]
         },
         "infants": {
             "0": [
                 "baby",
                 "infant",
-                "infants"
+                "infants",
+                "new born",
+                "neonatal",
+                "month old",
+                "stillborn"
             ]
         },
         "islam": {
@@ -265,7 +374,16 @@
                 "muslims",
                 "islamic",
                 "islam",
-                "muslim"
+                "muslim",
+                "imam",
+                "imams",
+                "islamist",
+                "islamists",
+                "islamophobia",
+                "jihadists",
+                "islamism",
+                "islamophobic",
+                "mosques"
             ]
         },
         "jazz": {
@@ -276,32 +394,59 @@
         "journalism": {
             "0": [
                 "editor",
+                "news",
+                "photographer",
+                "photographers",
                 "reporter",
+                "reporters",
+                "newsman",
+                "newsmen",
                 "journalism",
-                "journalist"
+                "journalist",
+                "journalists"
             ]
         },
         "judaism": {
             "0": [
                 "jewish",
+                "jewishness",
+                "jews",
+                "jew",
                 "judaism"
             ]
         },
         "legal": {
             "0": [
                 "lawyer",
+                "legalism",
+                "lawmaker",
+                "first amendment",
                 "law",
+                "legislation",
                 "legal"
             ]
         },
         "literature": {
             "0": [
-                "literature"
+                "literature",
+                "literatures",
+                "fiction",
+                "nonfiction",
+                "poetic",
+                "limericks",
+                "poetics",
+                "poetry"
             ]
         },
         "mafia": {
             "0": [
-                "mafia"
+                "mafia",
+                "mafias",
+                "organized crime",
+                "mafiosa",
+                "mafioso",
+                "gangsters",
+                "gangster"
             ]
         },
         "martial-arts": {
@@ -317,12 +462,25 @@
         "medicine": {
             "0": [
                 "medicine",
-                "patients"
+                "patients",
+                "patient",
+                "epideiology",
+                "cardiology",
+                "pharmacology",
+                "neurology",
+                "psychiatry",
+                "dentistry",
+                "doctor",
+                "doctors"
             ]
         },
         "military": {
             "0": [
                 "military",
+                "militarily",
+                "navy",
+                "air force",
+                "air forces",
                 "army",
                 "war",
                 "soldiers"
@@ -331,29 +489,38 @@
         "motorcycle": {
             "0": [
                 "motorcycle",
-                "motorcycles"
+                "motorcycles",
+                "motorbike",
+                "motor cycle",
+                "scooter"
             ]
         },
         "motoring": {
             "0": [
-                "motoring"
+                "motoring",
+                "motor sports",
+                "motor sport"
             ]
         },
         "music": {
             "0": [
                 "musician",
                 "music",
-                "musicians"                                                                                                                                                                                                                                                                                                                                                                                                                                                                             
+                "musicians"
             ]
         },
         "mythology": {
             "0": [
-                "mythology"
+                "mythology",
+                "mythologies",
+                "mythologie",
+                "greek myth"
             ]
         },
         "nature": {
             "0": [
-                "nature"
+                "nature",
+                "wild life"
             ]
         },
         "olympic_games": {
@@ -377,18 +544,53 @@
         },
         "outer_space": {
             "0": [
-                "outer_space"
+                "outer_space",
+                "astronaut",
+                "astronauts",
+                "comets",
+                "solar system",
+                "spaceship",
+                "spacewalk",
+                "space travel",
+                "galaxies",
+                "neptune",
+                "jupiter",
+                "uranus",
+                "universe",
+                "planets",
+                "asteroids",
+                "spacecraft",
+                "nebulae"
             ]
         },
         "pets": {
             "0": [
                 "pets",
                 "dog",
-                "pet"
+                "pet",
+                "kittens",
+                "cats",
+                "cat",
+                "dogs",
+                "puppy"
             ]
         },
         "political": {
             "0": [
+                "rightwing",
+                "right wing",
+                "leftwing",
+                "left wing",
+                "liberalism",
+                "geo political",
+                "democrats",
+                "republicans",
+                "social democrats",
+                "governing party",
+                "geopolitcs",
+                "congress",
+                "reformist",
+                "marxist",
                 "politician",
                 "politics",
                 "political"
@@ -412,12 +614,18 @@
         "psychology": {
             "0": [
                 "psychology",
-                "psychologist"
+                "psychologist",
+                "cognitive science",
+                "mental helth",
+                "psychiatry"
             ]
         },
         "racism": {
             "0": [
                 "racist",
+                "racists",
+                "white privilege",
+                "racial inequality",
                 "racism"
             ]
         },
@@ -432,7 +640,8 @@
                 "church",
                 "religious",
                 "religions",
-                "religion"
+                "religion",
+                "religiosity"
             ]
         },
         "school": {
@@ -451,19 +660,22 @@
         },
         "ships": {
             "0": [
+                "navies",
                 "ship",
                 "ships"
             ]
         },
         "showbiz": {
             "0": [
-                "showbiz"
+                "showbiz",
+                "entertainment"
             ]
         },
         "skiing": {
             "0": [
                 "skiing",
                 "ski",
+                "skier",
                 "skiers"
             ]
         },
@@ -484,7 +696,8 @@
                 "surf",
                 "surfing",
                 "surfer",
-                "surfers"
+                "surfers",
+                "windsurfing"
             ]
         },
         "swimming": {
@@ -508,28 +721,39 @@
             "0": [
                 "terrorists",
                 "terrorist",
-                "terrorism"
+                "terrorism",
+                "terror group",
+                "terror groups",
+                "fanatics",
+                "islamic extremism",
+                "jihadist",
+                "islamist groups",
+                "terror attack"
             ]
         },
         "theater": {
             "0": [
                 "theater",
-                "theaters"
+                "theaters",
+                "broadway"
             ]
         },
         "traditions": {
             "0": [
                 "traditions",
-                "tradition"
+                "tradition",
+                "folklore"
             ]
         },
         "travel": {
             "0": [
                 "journey",
+                "journeys",
                 "traveling",
                 "travel",
                 "travels",
-                "treveler"
+                "treveler",
+                "trips"
             ]
         },
         "war": {
@@ -553,6 +777,11 @@
                 "climate",
                 "rain",
                 "storm",
+                "storms",
+                "rains",
+                "flooding",
+                "snowfall",
+                "sunny",
                 "weather"
             ]
         },

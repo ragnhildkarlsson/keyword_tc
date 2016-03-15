@@ -1,0 +1,21 @@
+{
+    "id":"imdb_manual_choice_dice_itertion_inflection_paradigmatic",
+    "training_dataset":{
+        "id":"imdb_220000",
+        "filters":["to_lowercase", "only_alpha", "filter_nltk_english_stopwords"]
+    },
+    
+    "keywords":{
+        "setup_id":"imdb_manual_choice_dice_itertion_inflection_paradigmatic_setup_no_filter",
+        "seed_id":"imdb_manual_choice_dice_itertion_inflection_paradigmatic",
+        "keyword_generate_algorithm" :"dice",
+        "parameters": {"weight_limit":"1.05","max_number_of_key_words":"100"},
+        "reference_word_filter":{}
+    },
+    "catgorization_method":"cosinus",
+
+    "test_dataset":{
+        "id": "lk_test_data",
+        "test_category_filters":[]
+    }
+}

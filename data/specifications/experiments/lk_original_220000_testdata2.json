@@ -1,5 +1,5 @@
 {
-    "id":"lk_original_220000",
+    "id":"lk_original_220000_testdata2",
 	"training_dataset":{
 		"id":"imdb_220000",
 		"filters":["to_lowercase", "only_alpha", "filter_nltk_english_stopwords"]
@@ -15,7 +15,7 @@
     "catgorization_method":"cosinus",
 
     "test_dataset":{
-        "id": "lk_test_data",
+        "id": "lk_test_data_cleaned",
         "test_category_filters":{"black_lists":["less_than_5_documents"]}
     }
 }

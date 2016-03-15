@@ -1,0 +1,74 @@
+{
+    "arts": [
+        "cinema",
+        "theater",
+        "music",
+        "opera",
+        "classical_music",
+        "jazz",
+        "country_music",
+        "hip_hop",
+        "dance",
+        "pop--rock"
+    ],
+    "christianity": [
+        "christmas"
+    ],
+    "education": [
+        "school",
+        "college--university"
+    ],
+    "medicine": [
+        "disability"
+    ],
+    "motoring": [
+        "motorcycle",
+        "cars"
+    ],
+    "music": [
+        "opera",
+        "classical_music",
+        "jazz",
+        "country_music",
+        "hip_hop",
+        "pop--rock"
+    ],
+    "nature": [
+        "animals"
+    ],
+    "religion": [
+        "christianity",
+        "buddhism",
+        "hinduism",
+        "islam",
+        "judaism"
+    ],
+    "science": [
+        "medicine",
+        "technology",
+        "psychology"
+    ],
+    "sport": [
+        "baseball",
+        "basketball",
+        "bicycle",
+        "boxing",
+        "football",
+        "golf",
+        "hockey",
+        "horseracing",
+        "martial-arts",
+        "olympic_games",
+        "skiing",
+        "soccer",
+        "surfing",
+        "swimming",
+        "tennis",
+        "wrestling",
+        "water_sports"
+    ],
+    "water_sports": [
+        "surfing",
+        "swimming"
+    ]
+}

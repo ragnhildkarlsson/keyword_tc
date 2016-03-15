@@ -1,87 +1,295 @@
 {
+    "context_words": {
+        "airplanes": {
+            "0": []
+        },
+        "aliens": {
+            "0": []
+        },
+        "animals": {
+            "0": []
+        },
+        "arts": {
+            "0": []
+        },
+        "baseball": {
+            "0": []
+        },
+        "basketball": {
+            "0": []
+        },
+        "bicycle": {
+            "0": []
+        },
+        "boxing": {
+            "0": []
+        },
+        "buddhism": {
+            "0": []
+        },
+        "business": {
+            "0": []
+        },
+        "cars": {
+            "0": []
+        },
+        "christianity": {
+            "0": []
+        },
+        "christmas": {
+            "0": []
+        },
+        "cinema": {
+            "0": []
+        },
+        "classical_music": {
+            "0": []
+        },
+        "college--university": {
+            "0": []
+        },
+        "comic-book": {
+            "0": []
+        },
+        "communism": {
+            "0": []
+        },
+        "cookery": {
+            "0": []
+        },
+        "country_music": {
+            "0": []
+        },
+        "crime": {
+            "0": []
+        },
+        "dance": {
+            "0": []
+        },
+        "disability": {
+            "0": []
+        },
+        "drugs": {
+            "0": []
+        },
+        "education": {
+            "0": []
+        },
+        "fashion": {
+            "0": []
+        },
+        "football": {
+            "0": []
+        },
+        "fraud": {
+            "0": []
+        },
+        "gambling": {
+            "0": []
+        },
+        "golf": {
+            "0": []
+        },
+        "hinduism": {
+            "0": []
+        },
+        "hip_hop": {
+            "0": []
+        },
+        "history": {
+            "0": []
+        },
+        "hockey": {
+            "0": []
+        },
+        "horseracing": {
+            "0": []
+        },
+        "infants": {
+            "0": []
+        },
+        "islam": {
+            "0": []
+        },
+        "jazz": {
+            "0": []
+        },
+        "journalism": {
+            "0": []
+        },
+        "judaism": {
+            "0": []
+        },
+        "legal": {
+            "0": []
+        },
+        "literature": {
+            "0": []
+        },
+        "mafia": {
+            "0": []
+        },
+        "martial-arts": {
+            "0": []
+        },
+        "medicine": {
+            "0": []
+        },
+        "military": {
+            "0": []
+        },
+        "motorcycle": {
+            "0": []
+        },
+        "motoring": {
+            "0": []
+        },
+        "music": {
+            "0": []
+        },
+        "mythology": {
+            "0": []
+        },
+        "nature": {
+            "0": []
+        },
+        "olympic_games": {
+            "0": []
+        },
+        "opera": {
+            "0": []
+        },
+        "outdoor": {
+            "0": []
+        },
+        "outer_space": {
+            "0": []
+        },
+        "pets": {
+            "0": []
+        },
+        "political": {
+            "0": []
+        },
+        "pop--rock": {
+            "0": []
+        },
+        "prison": {
+            "0": []
+        },
+        "psychology": {
+            "0": []
+        },
+        "racism": {
+            "0": []
+        },
+        "radio": {
+            "0": []
+        },
+        "religion": {
+            "0": []
+        },
+        "school": {
+            "0": []
+        },
+        "science": {
+            "0": []
+        },
+        "ships": {
+            "0": []
+        },
+        "showbiz": {
+            "0": []
+        },
+        "skiing": {
+            "0": []
+        },
+        "soccer": {
+            "0": []
+        },
+        "sport": {
+            "0": []
+        },
+        "surfing": {
+            "0": []
+        },
+        "swimming": {
+            "0": []
+        },
+        "technology": {
+            "0": []
+        },
+        "tennis": {
+            "0": []
+        },
+        "terrorism": {
+            "0": []
+        },
+        "theater": {
+            "0": []
+        },
+        "traditions": {
+            "0": []
+        },
+        "travel": {
+            "0": []
+        },
+        "war": {
+            "0": []
+        },
+        "water_sports": {
+            "0": []
+        },
+        "weather": {
+            "0": []
+        },
+        "wrestling": {
+            "0": []
+        }
+    },
+    "reference_words": {
         "airplanes": {
             "0": [
-                "aviation",
-                "airliner",
-                "airplane",
-                "airplanes",
-                "plane",
-                "flight",
-                "pilots",
-                "pilot",
-                "jet",
-                "airport",
-                "planes",
-                "aircraft",
-                "airlines",
-                "cockpit",
-                "stewardess"
+                "airplanes"
             ]
         },
         "aliens": {
             "0": [
-                "aliens",
-                "alien",
-                "ufo",
-                "ufo",
-                "ailien"
+                "aliens"
             ]
         },
         "animals": {
             "0": [
-                "animals",
-                "animal"
+                "animals"
             ]
         },
         "arts": {
             "0": [
-                "arts",
-                "artist",
-                "artists",
-                "art"
+                "arts"
             ]
         },
         "baseball": {
             "0": [
-                "pitcher",
-                "bat",
-                "major_league",
                 "baseball"
-                ]
+            ]
         },
         "basketball": {
             "0": [
-                "nba",
-                "ncaa",
                 "basketball"
             ]
         },
         "bicycle": {
             "0": [
-                "bicycles",
-                "bike",
-                "bicycle",
-                "bicycling",
-                "bycycler",
-                "bicycling",
-                "cycling",
-                "bikes",
-                "cyclist",
-                "cyclists"
+                "bicycle"
             ]
         },
         "boxing": {
             "0": [
-                "boxing",
-                "boxer",
-                "boxers"
+                "boxing"
             ]
         },
         "buddhism": {
             "0": [
-                "buddha",
-                "dalai_lama",
-                "buddhist",
                 "buddhism"
             ]
         },
@@ -92,55 +300,43 @@
         },
         "cars": {
             "0": [
-                "cars",
-                "car"
+                "cars"
             ]
         },
         "christianity": {
             "0": [
-                "christians",
-                "christianity",
-                "jesus",
-                "biblical"
+                "christianity"
             ]
         },
         "christmas": {
             "0": [
-                "christmas",
-                "santa_claus"
+                "christmas"
             ]
         },
         "cinema": {
             "0": [
-                "cinema",
-                "cinemas"
+                "cinema"
             ]
         },
         "classical_music": {
             "0": [
-                "classical_music"
+                "classical music"
             ]
         },
         "college--university": {
             "0": [
-                "high_school",
-                "university",
-                "college"
+                "college",
+                "university"
             ]
         },
         "comic-book": {
             "0": [
-                "comic_books",
-                "comic",
-                "comics",
-                "comic_book"
+                "comic book"
             ]
         },
         "communism": {
             "0": [
-                "communists",
-                "communism",
-                "communist"
+                "communism"
             ]
         },
         "cookery": {
@@ -150,48 +346,31 @@
         },
         "country_music": {
             "0": [
-                "country_music",
-                "country_star"
+                "country music"
             ]
         },
         "crime": {
             "0": [
-                "crime",
-                "crimes",
-                "criminal",
-                "detective"
+                "crime"
             ]
         },
         "dance": {
             "0": [
-                "dance",
-                "dancers",
-                "dancing",
-                "dancer",
-                "dances"
+                "dance"
             ]
         },
         "disability": {
             "0": [
-                "cerebral_palsy",
-                "autism",
-                "disabilities",
-                "disability",
-                "disabled"
+                "disability"
             ]
         },
         "drugs": {
             "0": [
-                "heroin",
-                "cocaine",
-                "dealer",
-                "drugs",
-                "drug"
+                "drugs"
             ]
         },
         "education": {
             "0": [
-                "educational",
                 "education"
             ]
         },
@@ -212,38 +391,31 @@
         },
         "gambling": {
             "0": [
-                "casino",
-                "gambling",
-                "gambler"
+                "gambling"
             ]
         },
         "golf": {
             "0": [
-                "golf",
-                "golfer"
+                "golf"
             ]
         },
         "hinduism": {
             "0": [
-                "hindu",
-                "hindus",
                 "hinduism"
             ]
         },
         "hip_hop": {
             "0": [
-                "hip_hop"
-                ]
+                "hip hop"
+            ]
         },
         "history": {
             "0": [
-                "historical",
                 "history"
             ]
         },
         "hockey": {
             "0": [
-                "nhl",
                 "hockey"
             ]
         },
@@ -254,18 +426,12 @@
         },
         "infants": {
             "0": [
-                "baby",
-                "infant",
                 "infants"
             ]
         },
         "islam": {
             "0": [
-                "mosque",
-                "muslims",
-                "islamic",
-                "islam",
-                "muslim"
+                "islam"
             ]
         },
         "jazz": {
@@ -275,22 +441,16 @@
         },
         "journalism": {
             "0": [
-                "editor",
-                "reporter",
-                "journalism",
-                "journalist"
+                "journalism"
             ]
         },
         "judaism": {
             "0": [
-                "jewish",
                 "judaism"
             ]
         },
         "legal": {
             "0": [
-                "lawyer",
-                "law",
                 "legal"
             ]
         },
@@ -306,32 +466,22 @@
         },
         "martial-arts": {
             "0": [
-                "karate",
-                "kung_fu",
-                "martial_arts",
-                "mixed_martial_arts",
-                "martial_art",
-                "martial_arts_expert"
+                "martial arts"
             ]
         },
         "medicine": {
             "0": [
-                "medicine",
-                "patients"
+                "medicine"
             ]
         },
         "military": {
             "0": [
-                "military",
-                "army",
-                "war",
-                "soldiers"
+                "military"
             ]
         },
         "motorcycle": {
             "0": [
-                "motorcycle",
-                "motorcycles"
+                "motorcycle"
             ]
         },
         "motoring": {
@@ -341,9 +491,7 @@
         },
         "music": {
             "0": [
-                "musician",
-                "music",
-                "musicians"                                                                                                                                                                                                                                                                                                                                                                                                                                                                             
+                "music"
             ]
         },
         "mythology": {
@@ -358,11 +506,7 @@
         },
         "olympic_games": {
             "0": [
-                "summer_olympic",
-                "olympic",
-                "olympic_games",
-                "olympics",
-                "summer_olympic_games"
+                "olympic games"
             ]
         },
         "opera": {
@@ -377,20 +521,16 @@
         },
         "outer_space": {
             "0": [
-                "outer_space"
+                "outer space"
             ]
         },
         "pets": {
             "0": [
-                "pets",
-                "dog",
-                "pet"
+                "pets"
             ]
         },
         "political": {
             "0": [
-                "politician",
-                "politics",
                 "political"
             ]
         },
@@ -402,22 +542,16 @@
         },
         "prison": {
             "0": [
-                "prisoner",
-                "prison",
-                "jail",
-                "prisons",
-                "prisoners"
+                "prison"
             ]
         },
         "psychology": {
             "0": [
-                "psychology",
-                "psychologist"
+                "psychology"
             ]
         },
         "racism": {
             "0": [
-                "racist",
                 "racism"
             ]
         },
@@ -428,30 +562,21 @@
         },
         "religion": {
             "0": [
-                "god",
-                "church",
-                "religious",
-                "religions",
                 "religion"
             ]
         },
         "school": {
             "0": [
-                "schools",
                 "school"
             ]
         },
         "science": {
             "0": [
-                "scientific",
-                "scientists",
-                "scientist",
                 "science"
             ]
         },
         "ships": {
             "0": [
-                "ship",
                 "ships"
             ]
         },
@@ -462,36 +587,27 @@
         },
         "skiing": {
             "0": [
-                "skiing",
-                "ski",
-                "skiers"
+                "skiing"
             ]
         },
         "soccer": {
             "0": [
-                "soccer",
-                "world_cup"
+                "soccer"
             ]
         },
         "sport": {
             "0": [
-                "sport",
-                "sports"
+                "sport"
             ]
         },
         "surfing": {
             "0": [
-                "surf",
-                "surfing",
-                "surfer",
-                "surfers"
+                "surfing"
             ]
         },
         "swimming": {
             "0": [
-                "swimmer",
-                "swimming",
-                "swim"
+                "swimming"
             ]
         },
         "technology": {
@@ -506,61 +622,43 @@
         },
         "terrorism": {
             "0": [
-                "terrorists",
-                "terrorist",
                 "terrorism"
             ]
         },
         "theater": {
             "0": [
-                "theater",
-                "theaters"
+                "theater"
             ]
         },
         "traditions": {
             "0": [
-                "traditions",
-                "tradition"
+                "traditions"
             ]
         },
         "travel": {
             "0": [
-                "journey",
-                "traveling",
-                "travel",
-                "travels",
-                "treveler"
+                "travel"
             ]
         },
         "war": {
             "0": [
-                "soldiers",
-                "military",
-                "wars",
-                "war",
-                "army",
-                "battle"
+                "war"
             ]
         },
         "water_sports": {
             "0": [
-                "water_sports",
-                "water_sport"
+                "water sports"
             ]
         },
         "weather": {
             "0": [
-                "climate",
-                "rain",
-                "storm",
                 "weather"
             ]
         },
         "wrestling": {
             "0": [
-                "wrestler",
-                "wrestlers",
                 "wrestling"
             ]
         }
+    }
 }
