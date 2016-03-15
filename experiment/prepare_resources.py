@@ -29,6 +29,19 @@ def __get_all_index_specs(training_data_spec):
 
     return index_specs
 
+def __get_index_id_index_type(training_data_spec):
+    index_specs = __get_all_index_specs(training_data_spec)
+    result = {}
+    for index_id in index_specs:
+        result[index_id] = index_specs[index_id]["index_type"]
+    return result
+
+
+def get_all_index_indices(training_data_spec):
+    index_indices= list(__get_all_index_specs(training_data_spec).keys())
+    return index_indices
+
+
 def prepare_index(experiment_spec, index_cache_directory):
     # Check that all indxes are created or init creation
     training_data_spec = experiment_spec["training_dataset"]
@@ -50,10 +63,17 @@ def seed_words_to_index_terms(given_seed_words):
 
 def prepare_keywords(experiment_spec,keyword_cache_directory, index_cache_directory):
     keyword_spec = experiment_spec["keywords"]
-
+    #if manual keywords
+    keyword_method = keyword_spec["keyword_generate_algorithm"]
+    if keyword_method == "manual":
+        keywords = specification_handler.get_specification("keyword_setups",keyword_spec["setup_id"])
+        keyword_setup_id = keyword_spec["setup_id"]
+        keyword_id = keyword_setup_id_generator.get_keyword_setup_id(keyword_setup_id,experiment_spec["training_dataset"])
+        cache.write(keyword_cache_directory,keyword_id,keywords)
+        print("Manual keyword now stored in cache")
+        return
     keyword_setup_id = keyword_spec["setup_id"]
     keyword_seed_id =keyword_spec["seed_id"]
-
     keyword_id = keyword_setup_id_generator.get_keyword_setup_id(keyword_setup_id,experiment_spec["training_dataset"])
     if cache.in_cache(keyword_cache_directory, keyword_id):
        print("Keyword stored in cache: "+keyword_id)
@@ -69,7 +89,8 @@ def prepare_keywords(experiment_spec,keyword_cache_directory, index_cache_direct
     crete_new_keywords_spec["seed_id"] = keyword_spec["seed_id"]
     crete_new_keywords_spec["training_dataset"] = training_data_spec
     crete_new_keywords_spec["training_dataset"]["index_directory"] = index_cache_directory
-    crete_new_keywords_spec["training_dataset"]["index_id"]= list(__get_all_index_specs(training_data_spec).keys())
+    crete_new_keywords_spec["training_dataset"]["index_id"]= get_all_index_indices(training_data_spec)
+
 
     given_reference_words = specification_handler.get_specification(__KEYWORD_SEEDS_DIRECTORY_SPECIFICATION, keyword_seed_id)
     given_reference_words = seed_words_to_index_terms(given_reference_words)
@@ -83,26 +104,36 @@ def prepare_keywords(experiment_spec,keyword_cache_directory, index_cache_direct
 
 def prepare_tf_idf_vectors(experiment_spec,tf_idf_cache_dirctory,index_cache_directory):
     # Create test data handler
+
     tf_idf_vector_map_id = document_vectorization.get_tf_idf_map_id(experiment_spec)
     if cache.in_cache(tf_idf_cache_dirctory, tf_idf_vector_map_id):
         print( "TF_IDF_VECTORS stored in cache: " + tf_idf_vector_map_id)
         return
     test_data_id = dataset_id_handler.get_test_data_id(experiment_spec)
-    test_dataset_handler = TestDatasetHandler(test_data_id)
-    test_documents = test_dataset_handler.get_all_test_documents()
-    print("loaded test data")
     preprocessing_filter_names =  experiment_spec["training_dataset"]["filters"]
-    for test_document_id in test_documents:
-        test_document = test_documents[test_document_id]
-        test_documents[test_document_id] = preprocessing_filters.apply_filters_to_document(test_document, preprocessing_filter_names)
-
+    test_docuement_term_map = document_vectorization.get_test_document_term_map(test_data_id,preprocessing_filter_names)
     print("test data preprocessed")
-
-    index_specs = __get_all_index_specs(experiment_spec["training_dataset"])
-    index_indices = list(index_specs.keys())
-    tf_idf_vector_map = document_vectorization.get_docs_id_tf_idf_map(test_documents, index_indices, index_cache_directory)
+    index_id_index_type_map = __get_index_id_index_type(experiment_spec["training_dataset"])
+    index_types = ["word", "bigram", "trigram"]
+    max_freq_map = index_factory.create_max_freq_term_by_index_types(test_docuement_term_map, index_types)
+    print("max_freq_map_calculated")
+    tf_idf_vector_map = document_vectorization.get_docs_id_tf_idf_map(test_docuement_term_map, index_id_index_type_map, index_cache_directory,max_freq_map)
     pprint.pprint(tf_idf_vector_map)
     cache.write(tf_idf_cache_dirctory, tf_idf_vector_map_id, tf_idf_vector_map)
+
+
+def prepare_freq_dists(experiment_spec, freq_dists_cache_directory):
+    freq_dist_map_id = document_vectorization.get_freq_dist_map_id(experiment_spec)
+    if cache.in_cache(freq_dists_cache_directory, freq_dist_map_id):
+        print( "FREQDISTS stored in cache: " + freq_dist_map_id)
+        return
+    test_data_id = dataset_id_handler.get_test_data_id(experiment_spec)
+    preprocessing_filter_names =  experiment_spec["training_dataset"]["filters"]
+    test_document_term_map = document_vectorization.get_test_document_term_map(test_data_id,preprocessing_filter_names)
+    index_types = ["word", "bigram", "trigram"]
+    freq_dist_map = document_vectorization.get_freq_dists_map(test_document_term_map,index_types)
+    pprint.pprint(freq_dist_map)
+    cache.write(freq_dists_cache_directory,freq_dist_map_id,freq_dist_map)
 
 
 def prepare_gold_standard_categorization(experiment_spec, gold_standard_categorization_directory):

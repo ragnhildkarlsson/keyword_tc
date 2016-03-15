@@ -1,5 +1,3 @@
-import nltk
-
 from indexing import n_gram_handler
 from dataset_handler.training_dataset_handler import TrainingDatasetHandler
 from preprocessing import preprocessing_filters
@@ -92,3 +90,33 @@ def create_index(index_specification):
     index["max_frequency"] = __get_frequency_of_most_common_term(index["index"])
 
     return index
+#
+# def create_test_data_index(test_documents, index_types):
+#     test_data_index = {}
+#     for index_type in index_types:
+#         to_freq_dist = n_gram_handler.get_to_freq_dist_function(index_type)
+#         for document_id in test_documents:
+#             document = test_documents[document_id]
+#             freq_dist = to_freq_dist(document_terms)
+#             for document_term in freq_dist:
+#                 index_term = to_index_term(document_term)
+#                 if not index_term in test_data_index:
+#                     test_data_index["index_term"] = []
+#                 posting = (document_id,freq_dist[document_term])
+#                 test_data_index[index_term].append(posting)
+
+
+def create_max_freq_term_by_index_types(document_term_map, index_types):
+    max_freq_map = {}
+    for document_id in document_term_map:
+        max_freq_map[document_id] = {}
+        for index_type in index_types:
+            to_freq_dist_method = n_gram_handler.get_to_freq_dist_function(index_type)
+            freq_dist = to_freq_dist_method(document_term_map[document_id])
+            max_freq = 0
+            for document_term in freq_dist:
+                if(freq_dist[document_term]> max_freq):
+                    max_freq = freq_dist[document_term]
+            max_freq_map[document_id][index_type] = max_freq
+    return max_freq_map
+
