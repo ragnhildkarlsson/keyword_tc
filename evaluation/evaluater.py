@@ -1,19 +1,7 @@
-import math
-import nltk
 import numpy as np
-import os
 from operator import itemgetter
-
-
-# def check_no_documents_are_ranked_doubled(categorization):
-#     for category in categorization:
-#         allready_ranked = set()
-#         for document_tuple in categorization[category]:
-#             if document_tuple[0] in allready_ranked:
-#                 print(category)
-#                 raise Exception()
-#             else:
-#                 allready_ranked.add(document_tuple[0])
+from cache import cache
+from keyword_handler import posting_list_handler
 
 
 def get_evaluation_levels(evaluation_scale):
@@ -97,85 +85,41 @@ def get_precission_selection_indices(ranked_to_category, documents_in_category, 
     return precission_selction_map
 
 
-def get_percentage_selection_indices(ranked_to_category, percentage_levels):
-    percentage_selection_map = {}
-    for percentage_level_index in range(len(percentage_levels)):
-
-        if not ranked_to_category:
-            percentage_selection_map[percentage_level_index] = 0
-            continue
-
-        percentage_level = percentage_levels[percentage_level_index]
-        min_score = ranked_to_category[-1][1]
-        max_score = ranked_to_category[0][1]
-        score_range = max_score-min_score
-        min_score_in_selection = min_score + ((1 - percentage_level)*score_range)
-        higer_score_selection_indices = [selection_index + 1 for selection_index in range(len(ranked_to_category)) if ranked_to_category[selection_index][1] >= min_score_in_selection]
-        higer_score_selection_indices.sort(reverse = True)
-
-        if not higer_score_selection_indices:
-            percentage_selection_map[percentage_level_index] = 0
-        else:
-            best_selection = higer_score_selection_indices[0]
-            percentage_selection_map[percentage_level_index] = best_selection
-
-    return percentage_selection_map
-
-
-def get_selection_map_by_method_name(selection_method_name, ranked_to_category,document_in_category, evaluation_levels):
-    if selection_method_name == "precission_selection":
-        return get_precission_selection_indices(ranked_to_category,document_in_category,evaluation_levels)
-    if selection_method_name == "percentage_selection":
-        return get_percentage_selection_indices(ranked_to_category,evaluation_levels)
-
-
-
-def get_evaluation(categorization, gold_standard_categorization,
+def get_evaluation(test_categories,categorization, gold_standard_categorization,
                    category_hierarchy, evaluation_scale,
                    ):
     evaluation = {}
     evaluation_levels = get_evaluation_levels(evaluation_scale)
-    evaluation_selection_names = ["precission_selection","percentage_selection"]
-    # check_no_documents_are_ranked_doubled(categorization)
-    # Calculate selction maps, documents_in_cateogory_hierarachy and document ranked to categories in hiearachy
     selection_indices_map = {}
     documents_in_category_map = {}
     ranked_to_category_map = {}
-    for selection_method_name in evaluation_selection_names:
-        evaluation[selection_method_name] = {}
-        selection_indices_map[selection_method_name] = {}
-        for category in categorization:
-            ranked_to_category_map[category] = get_ranked_to_category(category,categorization, category_hierarchy)
-            documents_in_category_map[category]= get_gold_standard_documents_for_category(category,gold_standard_categorization,category_hierarchy)
-            selection_indices_map[selection_method_name][category] = get_selection_map_by_method_name(selection_method_name,
-                                                                                                      ranked_to_category_map[category],
-                                                                                                      documents_in_category_map[category],
-                                                                                                      evaluation_levels)
-    #check_no_documents_are_ranked_doubled(categorization)
+    for category in test_categories:
+        ranked_to_category_map[category] = get_ranked_to_category(category,categorization, category_hierarchy)
+        documents_in_category_map[category]= get_gold_standard_documents_for_category(category,gold_standard_categorization,category_hierarchy)
+        selection_indices_map[category] = get_precission_selection_indices(ranked_to_category_map[category],
+                                                                           documents_in_category_map[category],
+                                                                           evaluation_levels)
     # Caluclate evaluation
-    for selection_method_name in evaluation_selection_names:
-        for evaluation_level_index in range(len(evaluation_levels)):
-            evaluation[selection_method_name][evaluation_level_index] = {}
-            evaluation[selection_method_name][evaluation_level_index]["precission"] = {}
-            evaluation[selection_method_name][evaluation_level_index]["recall"] = {}
-            for category in categorization:
-                ranked_to_category = ranked_to_category_map[category]
-                documents_in_category = documents_in_category_map[category]
-                selection_index = selection_indices_map[selection_method_name][category][evaluation_level_index]
-                if selection_index == 0:
-                    selected_ranked_documents = []
-                else:
-                    selected_ranked_documents = ranked_to_category[:selection_index]
-                n_docs_in_category = len(documents_in_category)
 
-                # evaluate precission and recall in selection
-                n_correct_ranked_docs = get_n_correct_ranked_documents(selected_ranked_documents,documents_in_category)
-                if n_correct_ranked_docs  > n_docs_in_category:
-                    raise Exception()
-                precission_in_selection = get_precission(selected_ranked_documents, documents_in_category)
-                recall_in_selection = (n_correct_ranked_docs/n_docs_in_category)
-                evaluation[selection_method_name][evaluation_level_index]["precission"][category] =  precission_in_selection
-                evaluation[selection_method_name][evaluation_level_index]["recall"][category] = recall_in_selection
+    for evaluation_level_index in range(len(evaluation_levels)):
+        evaluation[evaluation_level_index] = {}
+        for category in test_categories:
+            evaluation[evaluation_level_index][category] = {}
+            ranked_to_category = ranked_to_category_map[category]
+            documents_in_category = documents_in_category_map[category]
+            selection_index = selection_indices_map[category][evaluation_level_index]
+            selected_ranked_documents = ranked_to_category[:selection_index]
 
+            n_docs_in_category = len(documents_in_category)
+
+            # evaluate precission and recall in selection
+            n_correct_ranked_docs = get_n_correct_ranked_documents(selected_ranked_documents,documents_in_category)
+            precission_in_selection = get_precission(selected_ranked_documents, documents_in_category)
+            recall_in_selection = n_correct_ranked_docs/n_docs_in_category
+            evaluation[evaluation_level_index][category]["precission"] =  precission_in_selection
+            evaluation[evaluation_level_index][category]["recall"] = recall_in_selection
+            evaluation[evaluation_level_index][category]["n_documents_in_category"] = n_docs_in_category
+            evaluation[evaluation_level_index][category]["n_correct_ranked_documents"] = n_correct_ranked_docs
 
     return evaluation
+

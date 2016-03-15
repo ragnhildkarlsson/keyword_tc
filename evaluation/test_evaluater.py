@@ -29,10 +29,3 @@ class TestEvaluater(TestCase):
         res = evaluater.get_precission_selection_indices(ranked_to_category, documents_in_category, precission_levels)
         self.assertEqual(res, expected)
 
-    def test_get_percentage_selection_indices_1(self):
-        ranked_to_category = [('a',1),('b',0.9),('c',0.8),('d',0.7),('e',0.4),('f',0)]
-        percentage_levels=[0.2, 0.25, 0.5, 1.0]
-        expected = {0:3,1:3,2:4,3:6,}
-        res = evaluater.get_percentage_selection_indices(ranked_to_category, percentage_levels)
-        self.assertEqual(res, expected)
-    pass
